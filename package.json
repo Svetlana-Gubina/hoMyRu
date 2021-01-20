@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "TEMPLATE_GULP",
+  "name": "TEST",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -60,10 +60,5 @@
   },
   "dependencies": {
     "gulp-sourcemaps": "^2.6.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test && npm run build"
-    }
   }
 }

@@ -1,0 +1,158 @@
+.page-footer {
+    @include indent();
+    width: 100%;
+    max-width: 100%;
+    @include flex();
+    flex-direction: column;
+
+    min-height: 600px;
+}
+
+.page-footer__nav-lsit {
+    @include indent();
+    @include flex();
+    flex-direction: column;
+    @include list();
+    background-color: #778899;
+}
+
+.page-footer__nav-item {
+    @include indent();
+    border-bottom: 2px solid #ffffff;
+}
+
+.page-footer__nav-link {
+    position: relative;
+    @include indent();
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    // font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 15px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+}
+
+.page-footer__content {
+    @include indent();
+    padding: 15px;
+    padding-top: 40px;
+    @include flex();
+    background-color: #778899;
+}
+
+.page-footer__contacts {
+    outline: 2px dashed crimson;
+}
+
+.page-footer__content-flex {
+    @include indent();
+    @include flex();
+    flex-direction: column;
+}
+
+.page-footer__contacts-inner {
+    @include indent();
+    @include flex();
+    flex-direction: column;
+}
+
+.page-footer__contacts-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    text-align: right;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+}
+
+.page-footer__contacts-tel {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.page-footer__contacts-mob {
+    position: relative;
+}
+
+.page-footer__contacts-email {
+    text-decoration: underline;
+}
+
+.page-footer__contacts-skype {
+    position: relative;
+}
+
+.page-footer__copyright {
+    max-width: 176px;
+}
+
+.page-footer__paragraph {
+    @include indent();
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.page-footer__bottom {
+    @include indent();
+    width: 100%;
+    max-width: 100%;
+    @include flex();
+    justify-content: center;
+    align-items: center;
+
+    min-height: 110px;
+
+    background-color: #2F4F4F;
+}
+
+.page-footer__stats {
+    @include indent();
+    width: 88px;
+    height: 31px;
+
+    background-image: url("../../img/mobile/stats.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.page-footer__social-list {
+    @include indent();
+    @include flex();
+    @include list();
+}
+
+.page-footer__social-item {
+    @include indent();
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 0;
+    background-color: red;
+}
+
+.page-footer__social-link {
+    font-size: 0;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}

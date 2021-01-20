@@ -1,0 +1,18 @@
+.slider__wrapper {
+    @include indent();
+}
+
+.slider__arrows {
+    @include indent();
+    @include flex();
+}
+
+.slider__arrow-btn {
+    border: none;
+    box-shadow: 0 none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    background-color: #ff5e1e;
+}

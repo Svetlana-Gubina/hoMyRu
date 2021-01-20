@@ -1,0 +1,23 @@
+.main-nav {
+    font-size: 13px;
+    line-height: 20px;
+
+    width: 100%;
+    // width: $mobile-width;
+    max-width: 100%;
+    // min-width: $mobile-width;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    min-height: 40px;
+
+    color: #ffffff;
+    background-color: #000000;
+
+    @include indent();
+    padding: 15px;
+    @include flex();
+    justify-content: center;
+    align-items: center;
+}

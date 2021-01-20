@@ -1,0 +1,144 @@
+.page-header {
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 195px;
+
+  @include indent();
+  // padding: 15px;
+  @include flex();
+  flex-direction: column;
+
+  margin-bottom: 30px;
+}
+
+.page-header__info {
+  @include indent();
+  padding: 15px;
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 150px;
+
+  @include flex();
+}
+
+.page-header__info-blick {
+  outline: 2px dashed teal;
+  @include indent();
+
+  @include flex();
+  flex-direction: column;
+}
+
+// .page-header__left {
+// }
+
+.page-header__user-nav {
+  margin-left: auto;
+}
+
+.page-header__contacts {
+  flex-direction: row;
+  justify-content: space-between;
+  flex: auto;
+}
+
+.page-header__contacts-inner {
+  @include indent();
+  @include flex();
+  flex-direction: column;
+}
+
+.page-header__contacts-link {
+  // padding: 0.5em;
+  color: #040d0d;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.page-header__contacts-tel {
+  // font-family: Roboto;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.page-header__contacts-mob {
+  position: relative;
+  // font-family: Roboto;
+  // font-size: 13px;
+  // font-weight: 300;
+  // line-height: 20px;
+}
+
+.page-header__contacts-email {
+  color: #4673ab;
+  text-decoration: underline;
+}
+
+.page-header__contacts-skype {
+  position: relative;
+}
+
+.page-header__reg {
+  // font-size: 13px;
+  // line-height: 20px;
+  @include indent();
+  padding: 0.5em 0;
+
+  & .page-header__reg-link {
+    // display: block;
+    // padding: 0;
+    color: #4673ab;
+    border-bottom: 1px dotted currentColor;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
+.page-header__user-container {
+  @include indent();
+  @include flex();
+  justify-content: space-around;
+}
+
+.page-header__user-link {
+  display: block;
+  // padding: 0;
+  color: #4673ab;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.page-header__cart,
+.page-header__search {
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+
+  background-color: red;
+}
