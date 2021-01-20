@@ -1,0 +1,14 @@
+.news {
+    display: none;
+
+    @include media-tablet() {
+        @include indent();
+        width: 100%;
+        max-width: 100%;
+        @include flex();
+
+        margin-bottom: 40px;
+
+        outline: 4px dashed #1482dc;
+    }
+}

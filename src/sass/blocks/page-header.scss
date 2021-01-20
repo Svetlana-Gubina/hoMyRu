@@ -21,14 +21,24 @@
   min-height: 150px;
 
   @include flex();
+
+  @include media-tablet() {
+    outline: 4px dashed crimson;
+    width: $tablet-width;
+    justify-content: space-between;
+  }
 }
 
-.page-header__info-blick {
+.page-header__info-block {
   outline: 2px dashed teal;
   @include indent();
 
   @include flex();
   flex-direction: column;
+
+  @include media-tablet() {
+    max-width: 250px;
+  }
 }
 
 // .page-header__left {
@@ -36,12 +46,49 @@
 
 .page-header__user-nav {
   margin-left: auto;
+
+  @include media-tablet() {
+    order: 3;
+    margin-left: 0;
+  }
+}
+
+.page-header__user-top {
+  @include indent();
+  @include flex();
+
+  @include media-tablet() {
+    margin-bottom: 15px;
+  }
+}
+
+.page-header__user-bottom {
+  display: none;
+
+  @include media-tablet() {
+    @include indent();
+    @include flex();
+  }
+}
+
+.page-header__login {
+  display: none;
+
+  @include media-tablet() {
+    display: block;
+    min-width: 250px;
+  }
 }
 
 .page-header__contacts {
   flex-direction: row;
   justify-content: space-between;
   flex: auto;
+
+  @include media-tablet() {
+    order: 2;
+    flex-direction: column;
+  }
 }
 
 .page-header__contacts-inner {
@@ -134,11 +181,39 @@
   }
 }
 
+.page-header__favorites,
+.page-header__compare {
+  position: relative;
+  color: #363c3e;
+}
+
 .page-header__cart,
 .page-header__search {
   font-size: 0;
   width: 22px;
   height: 22px;
 
-  background-color: red;
+  outline: 3px dashed crimson;
+}
+
+.page-header__cart {
+  @include media-tablet() {
+    width: 195px;
+    height: 52px;
+
+    background-image: url("../../img/tablet/cart-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.page-header__logo {
+  width: 138px;
+  height: 42px;
+
+  @include media-tablet() {
+    outline: 4px dashed crimson;
+    width: 197px;
+    height: 42px;
+  }
 }

@@ -11,5 +11,8 @@
   @include flex();
   height: auto;
 
-  outline: 2px dashed crimson;
+  @include media-tablet() {
+    outline: 4px dashed crimson;
+    width: $tablet-width;
+  }
 }
