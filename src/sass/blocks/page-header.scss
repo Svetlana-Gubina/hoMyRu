@@ -27,6 +27,11 @@
     width: $tablet-width;
     justify-content: space-between;
   }
+
+  @include media-max() {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .page-header__info-block {
@@ -187,8 +192,7 @@
   color: #363c3e;
 }
 
-.page-header__cart,
-.page-header__search {
+.page-header__cart {
   font-size: 0;
   width: 22px;
   height: 22px;
@@ -215,5 +219,26 @@
     outline: 4px dashed crimson;
     width: 197px;
     height: 42px;
+  }
+}
+
+.page-header__search {
+  // display: none;
+
+  @include media-max() {
+      @include indent();
+      // @include flex();
+
+      background-color: hotpink;
+  }
+}
+
+.page-header__search-container {
+  display: none;
+
+  @include media-max() {
+      @include indent();
+      @include flex();
+      flex-direction: column;
   }
 }

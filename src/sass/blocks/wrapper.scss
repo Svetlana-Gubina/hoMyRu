@@ -12,7 +12,15 @@
   height: auto;
 
   @include media-tablet() {
-    outline: 4px dashed crimson;
+    // outline: 4px dashed crimson;
     width: $tablet-width;
+  }
+
+  @include media-desktop() {
+    width: $desktop-width;
+  }
+
+  @include media-max() {
+    outline: 4px dashed crimson;
   }
 }

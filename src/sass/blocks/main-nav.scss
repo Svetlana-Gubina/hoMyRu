@@ -21,3 +21,62 @@
     justify-content: center;
     align-items: center;
 }
+
+.main-nav__main-nav {
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav__btn {
+    padding-left: 40px;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    box-shadow: 0 none;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+
+    @include media-max() {
+        display: none;
+    }
+}
+
+.main-nav__list {
+    display: none;
+
+    @include media-max() {
+        width: 100%;
+        max-width: 100%;
+        @include list();
+        @include indent();
+        @include flex();
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.main-nav__item {
+    @include indent();
+}
+
+.main-nav__link {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+}

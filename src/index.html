@@ -15,10 +15,25 @@
       <link rel="stylesheet" href="css/style.min.css">
    </head>
    <body>
+      <nav class="main-nav">
+         <div class="wrapper main-nav__main-nav">
+            <button class="main-nav__btn" type="button">Меню</button>
+            <ul class="main-nav__list">
+               <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="#">Оплата и доставка</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="#">Гарантии и возврат</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="#">Сотрудничество</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="#">Услуги</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="#">Решения</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="#">Техподдержка</a></li>
+               <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+            </ul>
+         </div>
+      </nav>
       <div class="wrapper">
         <h1 class="visually-hidden">Homyru интеренет-магазин бытовой техники</h1>
         <header class="page-header">
-           <nav class="main-nav">Меню</nav>
 
            <div class="page-header__info">
 
@@ -42,13 +57,27 @@
                  
                <div class="page-header__user-container">
                 <a class="page-header__user-link page-header__cart" href="#">Корзина</a>
-                <a class="page-header__user-link page-header__search" href="#">Поиск</a>
+                <!--<a class="page-header__user-link page-header__search" href="#">Поиск</a>-->
                </div>
 
                <div class="page-header__user-bottom">
                   <a class="page-header__user-link page-header__favorites" href="#">Избранное</a>
                  <a class="page-header__user-link page-header__compare" href="#">Сравнение</a>
                </div>
+              </div>
+
+              <div class="page-header__info-block page-header__search">
+                 <div class="page-header__search-container">
+                  <p class="page-header__search-paragraph">VoIP решения
+                     для экономных людей</p>
+                    <form class="page-header__search-form" action="#" method="GET">
+                       <label>
+                        <input type="text" name="search" placeholder="Поиск по сайту">
+                       </label>
+                       <button type="submit">искать</button>
+                    </form>
+                 </div>
+                 
               </div>
 
               <div class="page-header__info-block page-header__contacts">
@@ -64,6 +93,55 @@
            </div>
         </header>
         <main class="page-main">
+
+           <section class="categories">
+              <h2 class="visually-hidden">Категории товаров</h2>
+              <ul class="categories__list">
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">VOIP
+                  ОБОРУДОВАНИЕ</a>
+                 </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">SKYPE
+                  ОБОРУДОВАНИЕ</a>
+                 </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">GSM
+                  ОБОРУДОВАНИЕ</a>
+                 </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">ВИДЕО-
+                  ОБОРУДОВАНИЕ</a>
+                 </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">РАДИО И DECT
+                  ТЕЛЕФОНЫ</a>
+                 </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">ГАРНИТУРЫ</a>
+                  </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">ЭЛЕКТРОННЫЕ
+                  ЗАМКИ</a>
+                 </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">ДОМОФОННЫЕ
+                  СИСТЕМЫ</a>
+                 </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">СИСТЕМЫ ЗАПИСИ
+                  ТЕЛЕФОННЫХ РАЗГОВОРОВ</a>
+                 </li>
+                 <li class="categories__item">
+                    <a class="categories__link" href="#">СЕТЕВОЕ
+                  ОБОРУДОВАНИЕ</a>
+                 </li>
+                 <li class="categories__item">
+                  <a class="categories__link" href="#"></a>
+               </li>
+              </ul>
+           </section>
+
            <section class="news">
             <h2 class="visually-hidden">Новости</h2>
             
