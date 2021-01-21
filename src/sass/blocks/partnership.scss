@@ -30,6 +30,12 @@
     margin-bottom: 30px;
 }
 
+.partnership__stages-list  {
+    @include media-tablet() {
+       justify-content: space-evenly;
+    }
+}
+
 .partnership__options-item {
     @include indent();
     padding: 20px 10px;
@@ -38,6 +44,7 @@
     align-items: center;
     border-radius: 7px;
     background-color: #dbdee6;
+    
 }
 
 .partnership__options-link {
@@ -65,4 +72,15 @@
     max-width: 45%;
     padding-top: 100px;
     margin: 5px;
+
+    @include flex();
+    justify-content: center;
+    align-items: center;
+
+    @include media-tablet() {
+        outline: 4px dashed crimson;
+        max-width: 25%;
+        padding-left: 40px;
+        padding-top: 0;
+    }
 }

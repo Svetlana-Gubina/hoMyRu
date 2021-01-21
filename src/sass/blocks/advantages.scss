@@ -1,0 +1,64 @@
+.advantages {
+    display: none;
+
+    @include media-tablet() {
+        outline: 4px dashed purple;
+        @include indent();
+        padding: 40px 20px;
+        width: 100%;
+        max-width: 100%;
+        @include flex();
+        flex-direction: column;
+        margin-bottom: 60px;
+        background-color: #e3e5eb;
+    }
+}
+
+.advantages__list {
+    @include indent();
+    @include flex();
+    justify-content: space-around;
+    @include list();
+
+    width: 100%;
+    max-width: 100%;
+}
+
+.advantages__item {
+    outline: 4px dashed #b9afb9;
+    
+    @include indent();
+    @include flex();
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    max-width: 20%;
+}
+
+.advantages__icon {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.advantages__icon--consult {
+    background-image: url("../../img/consult.png");
+}
+
+.advantages__icon--pay {
+    background-image: url("../../img/cash.png");
+}
+
+.advantages__icon--serv {
+    background-image: url("../../img/sevice.png");
+}
+
+.advantages__icon--pickpoint {
+    background-image: url("../../img/pickpoint.png");
+}

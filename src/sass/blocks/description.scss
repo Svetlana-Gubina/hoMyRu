@@ -1,0 +1,37 @@
+.description {
+    display: none;
+
+    @include media-tablet() {
+        outline: 4px dashed hotpink;
+        @include indent();
+        width: 100%;
+        max-width: 100%;
+        @include flex();
+        margin-bottom: 60px;
+    }
+}
+
+.description__column {
+    max-width: 50%;
+    @include indent();
+    @include flex();
+    flex-direction: column;
+}
+
+.description__paragraph {
+    @include indent();
+    padding: 10px;
+}
+
+.description__link {
+    color: $brand-color;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+}

@@ -1,0 +1,73 @@
+.popular {
+    display: none;
+
+    @include media-tablet() {
+        outline: 4px dashed purple;
+        @include indent();
+        width: 100%;
+        max-width: 100%;
+        @include flex();
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+}
+
+.popular__list {
+    @include indent();
+    @include flex();
+    @include list();
+
+    width: 100%;
+    max-width: 100%;
+}
+
+.popular__item {
+    @include indent();
+    @include flex();
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    max-width: 190px;
+    max-width: 25%;
+    outline: 2px dashed hotpink;
+}
+
+.popular__img-container {
+    @include indent();
+    @include flex();
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 170px;
+
+    outline: 4px dashed skyblue;
+}
+
+.popular__img {
+    display: block;
+}
+
+.popular__item-title {
+    @include indent();
+    // display: block;
+    color: $link-color;
+    // font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+
+    margin-top: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}

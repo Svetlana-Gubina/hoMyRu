@@ -1,0 +1,84 @@
+.numbers {
+    display: none;
+
+    @include media-tablet() {
+        outline: 4px dashed purple;
+        @include indent();
+        width: 100%;
+        max-width: 100%;
+        @include flex();
+        margin-bottom: 60px;
+    }
+}
+
+.numbers__list {
+    @include indent();
+    @include flex();
+    justify-content: space-between;
+    @include list();
+
+    width: 100%;
+    max-width: 100%;
+}
+
+.numbers__item {
+    width: 15%;
+
+    @include indent();
+    @include flex();
+    flex-direction: column;
+
+    &:nth-child(odd) .numbers__icon {
+        color: $brand-color;
+    }
+}
+
+.numbers__icon {
+    width: 130px;
+    height: 130px;
+    width: 100px;
+    height: 100px;
+    // font-family: Roboto;
+    font-weight: 700;
+
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid #dbdee6;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.numbers__icon--1,
+.numbers__icon--4,
+.numbers__icon--5,
+.numbers__icon--6 {
+    font-size: 80px;
+    font-size: 60px;
+    line-height: 18px;
+}
+
+.numbers__icon--2 {
+    font-size: 54px;
+    font-size: 34px;
+}
+
+.numbers__icon--3 {
+    font-size: 44px;
+    font-size: 24px;
+
+    flex-direction: column;
+}
+
+.numbers__item-text {
+    color: #040d0d;
+    // font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
