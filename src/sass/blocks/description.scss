@@ -2,12 +2,12 @@
     display: none;
 
     @include media-tablet() {
-        outline: 4px dashed hotpink;
+        // outline: 4px dashed hotpink;
         @include indent();
         width: 100%;
         max-width: 100%;
-        // @include flex();
-        margin-bottom: 60px;
+        @include flex();
+        margin-bottom: 20px;
     }
 }
 

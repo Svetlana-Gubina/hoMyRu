@@ -2,19 +2,23 @@
     display: none;
 
     @include media-tablet() {
-        outline: 4px dashed purple;
+        // outline: 4px dashed purple;
         @include indent();
         width: 100%;
         max-width: 100%;
-        // @include flex();
-        margin-bottom: 60px;
+        @include flex();
+        // margin-bottom: 20px;
     }
+}
+
+.numbers__title {
+    margin-bottom: 45px;
 }
 
 .numbers__list {
     @include indent();
     @include flex();
-    justify-content: space-between;
+    justify-content: space-around;
     @include list();
 
     width: 100%;
@@ -22,24 +26,37 @@
 }
 
 .numbers__item {
-    width: 15%;
+    // width: 15%;
+    // outline: 4px dashed purple;
+
+    width: 150px;
+    // height: 130px;
 
     @include indent();
     @include flex();
     flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 10px;
 
     &:nth-child(odd) .numbers__icon {
         color: $brand-color;
     }
 }
 
+.numbers__list .numbers__item:nth-of-type(5),
+.numbers__list .numbers__item:last-of-type {
+    display: none;
+}
+
 .numbers__icon {
     width: 130px;
     height: 130px;
-    width: 100px;
-    height: 100px;
-    // font-family: Roboto;
+    // width: 100px;
+    // height: 100px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 700;
+    font-style: normal;
 
     @include flex();
     justify-content: center;
@@ -56,18 +73,15 @@
 .numbers__icon--5,
 .numbers__icon--6 {
     font-size: 80px;
-    font-size: 60px;
     line-height: 18px;
 }
 
 .numbers__icon--2 {
     font-size: 54px;
-    font-size: 34px;
 }
 
 .numbers__icon--3 {
     font-size: 44px;
-    font-size: 24px;
 
     flex-direction: column;
 }
