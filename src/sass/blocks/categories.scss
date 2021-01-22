@@ -4,11 +4,10 @@
     @include media-max() {
         outline: 4px dashed crimson;
 
-        // display: block;
         width: 100%;
         max-width: 100%;
         @include indent();
-        // @include flex();
+        @include flex();
         // justify-content: space-evenly;
         // align-items: center;
         background-color: $brand-color;
@@ -30,6 +29,7 @@
 .categories__item {
     @include indent();
     @include flex();
+    padding: 2px;
 }
 
 .categories__link {
@@ -38,7 +38,7 @@
     
     color: #ffffff;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 300;
     line-height: 16px;

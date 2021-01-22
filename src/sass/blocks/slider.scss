@@ -1,5 +1,9 @@
 .slider__wrapper {
     @include indent();
+
+    @include media-max() {
+        display: none;
+    }
 }
 
 .slider__arrows {
@@ -8,6 +12,7 @@
     justify-content: space-between;
 
     min-width: 65px;
+    
 }
 
 .slider__arrow-btn {

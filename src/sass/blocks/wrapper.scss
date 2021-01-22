@@ -1,7 +1,6 @@
 .wrapper {
   width: 100%;
-  width: $mobile-width;
-  // max-width: $desktop-width;
+  // width: $mobile-width;
   max-width: 100%;
   min-width: $mobile-width;
   @include indent();
@@ -11,18 +10,18 @@
   @include flex();
   height: auto;
 
-  // outline: 4px dashed crimson;
-
   @include media-tablet() {
-    // outline: 4px dashed crimson;
     // width: $tablet-width;
   }
 
   @include media-desktop() {
     // width: $desktop-width;
+    padding: 0 15px;
   }
 
   @include media-max() {
-    // outline: 4px dashed crimson;
+    outline: 1px dashed crimson;
+    max-width: $max-desktop-width;
+    padding: 0;
   }
 }

@@ -11,7 +11,16 @@
 }
 
 .partnership__title {
+    margin-bottom: 40px;
     // margin-left: 10px;
+
+    @include media-desktop() {
+        margin-bottom: 30px;
+    }
+
+    @include media-max() {
+        margin-bottom: 40px;
+    }
 }
 
 .partnership__options-list,
@@ -25,6 +34,10 @@
     // outline: 3px dashed #dc1467;
 
     margin-bottom: 10px;
+
+    @include media-desktop() {
+        margin-bottom: 40px;
+    }
 }
 
 .partnership__stages-list  {
@@ -51,6 +64,11 @@
     align-items: center;
     border-radius: 7px;
     background-color: #dbdee6;
+
+    @include media-tablet() {
+       margin-right: 10px;
+       padding: 10px 20px;
+    }
     
 }
 
@@ -102,10 +120,45 @@
     background-size: 32px 32px;
 
     @include media-tablet() {
-        // outline: 4px dashed crimson;
-        // max-width: 25%;
-        // padding-left: 40px;
-        // padding-top: 0;
+        // outline: 2px dashed crimson;
+
+        position: relative;
+        max-width: 139px;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 45px;
+            height: 10px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='10' viewBox='0 0 45 10'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23dbdee6' d='M0 4.123h36.97c-1.107-1.623-1.658-2.68-1.715-4.124 2.518 2.487 5.79 3.782 9.745 5-3.955 1.166-7.083 2.59-9.745 5 .17-1.567.63-2.513 1.749-4.238H0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+
+    @include media-desktop() {
+        outline: 3px dashed olive;
+
+        max-width: 230px;
+        // max-width: 20%;
+        padding-top: 10px;
+        padding-left: 70px;
+
+        background-position: 10% 10%;
+    }
+
+    @include media-max() {
+        max-width: 170px;
+    }
+}
+
+.partnership__stages-list .partnership____stages-item:last-of-type {
+    @include media-tablet() {
+        &::after {
+            display: none;
+        }
     }
 }
 

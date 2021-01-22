@@ -2,16 +2,25 @@
     display: none;
 
     @include media-tablet() {
-        outline: 4px dashed purple;
+        // outline: 4px dashed purple;
         @include indent();
-        padding: 40px 20px;
+        padding: 20px 0;
         width: 100%;
         max-width: 100%;
-        // @include flex();
+        @include flex();
         flex-direction: column;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         background-color: #e3e5eb;
     }
+
+    @include media-desktop() {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}
+
+.advantages__title {
+    margin-left: 20px;
 }
 
 .advantages__list {
@@ -25,13 +34,20 @@
 }
 
 .advantages__item {
-    outline: 4px dashed #b9afb9;
+    // outline: 4px dashed #b9afb9;
     
     @include indent();
     @include flex();
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
 
     max-width: 20%;
 }

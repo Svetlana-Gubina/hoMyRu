@@ -2,11 +2,15 @@
     display: none;
 
     @include media-tablet() {
-        outline: 4px dashed hotpink;
+        // outline: 4px dashed hotpink;
         @include indent();
         width: 100%;
         max-width: 100%;
-        // @include flex();
+        @include flex();
+        margin-bottom: 20px;
+    }
+
+    @include media-desktop() {
         margin-bottom: 60px;
     }
 }
@@ -19,8 +23,15 @@
 }
 
 .description__paragraph {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     @include indent();
     padding: 10px;
+
+    @include media-desktop() {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 22px;
+    }
 }
 
 .description__link {

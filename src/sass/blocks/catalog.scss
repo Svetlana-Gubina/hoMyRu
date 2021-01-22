@@ -16,15 +16,19 @@
     padding: 0 5px;
     margin-bottom: 28px;
 
-    // outline: 4px dashed blue;
+    @include media-tablet() {
+      // outline: 4px dashed blue;
+      // padding: 0;
+    }
 }
 
 .catalog__inner-top {
-    width: 100%;
-    max-width: 100%;
-    @include indent();
-    @include flex();
-    justify-content: space-between;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  @include indent();
+  @include flex();
+  justify-content: space-between;
 
     // outline: 2px dashed blue;
 }
@@ -67,6 +71,30 @@
   }
 }
 
+.catalog__all-link {
+  display: none;
+
+  @include media-max() {
+    margin-left: auto;
+    display: block;
+    color: $link-color;
+    font-family: "Roboto Medium", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
 .catalog__list-container {
   // outline: 4px dashed saddlebrown;
 
@@ -84,6 +112,21 @@
     @include list();
 
     min-width: 1300px;
+
+    @include media-tablet() {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+
+      justify-content: space-between;
+
+      // padding-left: 5px;
+    }
+
+    @include media-max() {
+      // outline: 4px dashed crimson;
+      justify-content: space-around;
+    }
 }
 
 .catalog__item {
@@ -94,7 +137,7 @@
   padding: 20px 0;
   padding-top: 25px;
 
-  margin-right: 25px;
+  // margin-right: 25px;
   width: 289px;
 
   // min-height: 388px;
@@ -104,7 +147,7 @@
 
   @include flex();
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   &::before {
@@ -119,9 +162,24 @@
   }
 
   @include media-tablet() {
-    // max-width: 213px;
-    // max-width: 25%;
-    // padding: 0;
+    max-width: 213px;
+    margin-bottom: 20px;
+    // margin-right: 25px;
+  }
+
+  @include media-max() {
+    // outline: 4px dashed crimson;
+    max-width: 233px
+  }
+}
+
+.catalog__list .catalog__item:last-of-type {
+  @include media-tablet() {
+    display: none;
+  }
+
+  @include media-desktop() {
+    @include flex();
   }
 }
 
@@ -181,6 +239,12 @@
   &:active {
     opacity: 0.8;
   }
+
+  @include media-tablet() {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .catalog__item-price {
@@ -226,6 +290,10 @@
   // width: 100%;
   max-width: 100%;
   width: 210px;
+
+  @include media-tablet() {
+    max-width: 90%;
+  }
 }
 
 .catalog__item-btn {
@@ -271,6 +339,7 @@
 
 }
 
+.catalog__item-details,
 .catalog__item-banner-details {
   color: $link-color;
   padding: 5px 0;
@@ -284,13 +353,28 @@
   &:active {
     opacity: 0.8;
   }
+
+  @include media-tablet() {
+    align-self: center;
+  }
 }
 
 .catalog__actions {
   & .catalog__item {
-    // outline: 4px dashed crimson;
     padding-top: 15px;
+
+    @include media-tablet() {
+      align-items: flex-start;
+    }
+
+    & .catalog__item-title {
+      margin-right: 0;
+      margin-left: 0;
+
+    }
   }
+
+
 }
 
 .catalog__item-banner {
@@ -312,18 +396,34 @@
 
 .catalog__item-banner-1 {
   background-image: url("../../img/mobile/actions-mob-1.jpg");
+
+  @include media-tablet() {
+    background-image: url("../../img/actions-1.jpg");
+  }
 }
 
 .catalog__item-banner-2 {
   background-image: url("../../img/actions-2.jpg");
+
+  @include media-tablet() {
+    background-image: url("../../img/actions-2.jpg");
+  }
 }
 
 .catalog__item-banner-3 {
   background-image: url("../../img/actions-3.jpg");
+
+  @include media-tablet() {
+    background-image: url("../../img/actions-3.jpg");
+  }
 }
 
 .catalog__item-banner-4 {
   background-image: url("../../img/actions-4.jpg");
+
+  @include media-tablet() {
+    background-image: url("../../img/actions-4.jpg");
+  }
 }
 
 
@@ -340,6 +440,15 @@
   // max-width: 90%;
   margin-right: auto;
   margin-left: auto;
+
+  @include media-tablet() {
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  @include media-desktop() {
+    margin-bottom: 10px;
+  }
 }
 
 .catalog__item-banner-timer {
@@ -356,6 +465,15 @@
   min-height: 65px;
 
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog__item-timer-span {
+  display: none;
+
+  @include media-max() {
+    display: block;
+    max-width: 59px;
+  }
 }
 
 .catalog__item-timeless-inner {

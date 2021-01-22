@@ -10,19 +10,45 @@
 
     @include media-tablet() {
         // min-height: 300px;
-        // flex-direction: row;
+        flex-direction: row;
+    }
+
+    @include media-max() {
+        align-items: center;
     }
 }
 
 .page-footer__content {
+    width: 100%;
+    max-width: 100%;
+    background-color: #778899;
+    @include indent();
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page-footer__content .wrapper {
     @include indent();
     // padding: 15px;
     @include flex();
-    background-color: #778899;
-
+   
     @include media-tablet() {
         // outline: 4px dashed crimson;
-        // justify-content: space-evenly;
+        justify-content: space-between;
+        // width: 100%;
+        // max-width: 100%;
+        padding: 20px;
+        padding-top: 30px;
+    }
+
+    @include media-desktop(){
+       padding-top: 40px;
+       justify-content: flex-start;
+    }
+
+    @include media-max() {
     }
 }
 
@@ -34,7 +60,7 @@
     // outline: 2px dashed crimson;
 
     @include media-tablet() {
-        // max-width: 25%;
+        max-width: 25%;
     }
 }
 
@@ -44,19 +70,37 @@
     // outline: 2px dashed crimson;
     max-width: 55%;
     flex: auto;
+
+    @include media-tablet() {
+        max-width: 176px;
+    }
+
+    @include media-desktop(){
+       margin-right: 110px;
+    }
 }
 
 .page-footer__logo {
     outline: 3px dashed crimson;
     margin-bottom: 20px;
+
+    @include media-tablet() {
+        margin-bottom: 0;
+    }
+}
+
+.page-footer__span {
+    display: none;
+
+    @include media-tablet() {
+        display: block;
+    }
 }
 
 
 // nav
 
 .page-footer__nav-lsit {
-    // outline: 4px dashed crimson;
-
     @include indent();
     @include flex();
     flex-direction: column;
@@ -66,7 +110,10 @@
     margin-bottom: 30px;
 
     @include media-tablet() {
-        // order: 2;
+        // outline: 4px dashed crimson;
+        order: 2;
+        max-width: 25%;
+        margin-bottom: 0;
     }
 }
 
@@ -75,7 +122,33 @@
     border-bottom: 2px solid #ffffff;
 
     @include media-tablet() {
-        // border-bottom: none;
+        border-bottom: none;
+    }
+}
+
+.page-footer__nav-lsit .page-footer__nav-item:last-of-type {
+    display: none;
+
+    @include media-tablet() {
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        width: 112px;
+        padding: 15px;
+
+        background-image: url("../../img/cloud.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+
+        & .page-footer__nav-link {
+            color: $link-color;
+            font-family: "Roboto Medium", Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
     }
 }
 
@@ -117,7 +190,12 @@
     }
 
     @include media-tablet() {
-        // padding: 0;
+        padding: 0;
+        text-decoration: underline;
+
+        &::after {
+           display: none;
+        }
     }
 }
 
@@ -132,7 +210,12 @@
     justify-content: space-between;
 
     @include media-tablet() {
-        // order: 4;
+        order: 4;
+        max-width: 190px;
+    }
+
+    @include media-desktop() {
+        justify-content: start;
     }
 }
 
@@ -166,6 +249,21 @@
     line-height: 20px;
     // letter-spacing: 0.5px;
     margin-bottom: 3px;
+
+    @include media-tablet() {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.page-footer__contacts-span {
+    display: none;
+
+    @include media-tablet() {
+        display: block;
+        margin-left: auto;
+    }
 }
 
 .page-footer__contacts-mob {
@@ -175,6 +273,10 @@
   
     @include flex();
     align-items: center;
+
+    @include media-tablet() {
+        margin-left: auto;
+    }
 
     & .page-footer__contacts-icon {
        width: 16px;
@@ -284,26 +386,47 @@
 
 .page-footer__adress {
     display: none;
+
+    @include media-tablet() {
+       display: flex;
+    }
+
+    @include media-desktop(){
+        max-width: 155px;
+        margin-right: 75px;
+    }
 }
 
 
 // bottom
 
 .page-footer__bottom {
-    @include indent();
-    padding: 20px;
     width: 100%;
     max-width: 100%;
+    background-color: #2F4F4F;
+    @include indent();
+    @include flex();
+    justify-content: center;
+    align-items: center;
+}
+
+.page-footer__bottom .wrapper {
+    @include indent();
+    padding: 20px;
     @include flex();
     justify-content: center;
     align-items: center;
 
     // min-height: 110px;
 
-    background-color: #2F4F4F;
-
     @include media-tablet() {
         justify-content: space-evenly;
+        padding: 10px;
+    }
+
+    @include media-desktop(){
+        justify-content: space-between;
+        padding-bottom: 5px;
     }
 }
 
@@ -321,12 +444,17 @@
    display: none;
 
   @include media-tablet() {
-    //   max-width: 589px;
-    //   display: block;
-    //   color: #c8d4dc;
-    //   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    //   font-size: 11px;
-    //   font-weight: 300;
-    //   line-height: 18px;
+    max-width: 589px;
+    display: block;
+    color: #c8d4dc;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+  @include media-desktop(){
+    max-width: 589px;
+    justify-content: space-between;
   }
 }

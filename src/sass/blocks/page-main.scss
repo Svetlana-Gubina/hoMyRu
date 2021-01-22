@@ -2,6 +2,13 @@
     @include indent();
     width: 100%;
     max-width: 100%;
+
+    padding: 0 15px;
+
+    @include media-max() {
+        outline: 3px dashed hotpink;
+        padding: 0;
+    }
 }
 
 .page-main__title {
