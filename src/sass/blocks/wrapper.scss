@@ -11,16 +11,18 @@
   @include flex();
   height: auto;
 
+  // outline: 4px dashed crimson;
+
   @include media-tablet() {
     // outline: 4px dashed crimson;
-    width: $tablet-width;
+    // width: $tablet-width;
   }
 
   @include media-desktop() {
-    width: $desktop-width;
+    // width: $desktop-width;
   }
 
   @include media-max() {
-    outline: 4px dashed crimson;
+    // outline: 4px dashed crimson;
   }
 }

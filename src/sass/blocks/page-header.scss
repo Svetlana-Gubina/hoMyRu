@@ -2,28 +2,13 @@
   width: 100%;
   max-width: 100%;
 
-  min-height: 195px;
-
   @include indent();
   // padding: 15px;
   @include flex();
-  flex-direction: column;
 
-  margin-bottom: 30px;
-}
-
-.page-header__info {
-  @include indent();
-  padding: 15px;
-  width: 100%;
-  max-width: 100%;
-
-  min-height: 150px;
-
-  @include flex();
+  margin-bottom: 20px;
 
   @include media-tablet() {
-    outline: 4px dashed crimson;
     width: $tablet-width;
     justify-content: space-between;
   }
@@ -34,118 +19,32 @@
   }
 }
 
-.page-header__info-block {
-  outline: 2px dashed teal;
+
+.page-header__block {
   @include indent();
 
   @include flex();
   flex-direction: column;
+  margin-bottom: 15px;
 
   @include media-tablet() {
     max-width: 250px;
   }
 }
 
-// .page-header__left {
-// }
+.page-header__logo-container {
+  // outline: 4px dashed teal;
 
-.page-header__user-nav {
-  margin-left: auto;
-
-  @include media-tablet() {
-    order: 3;
-    margin-left: 0;
-  }
-}
-
-.page-header__user-top {
-  @include indent();
-  @include flex();
-
-  @include media-tablet() {
-    margin-bottom: 15px;
-  }
-}
-
-.page-header__user-bottom {
-  display: none;
-
-  @include media-tablet() {
-    @include indent();
-    @include flex();
-  }
-}
-
-.page-header__login {
-  display: none;
-
-  @include media-tablet() {
-    display: block;
-    min-width: 250px;
-  }
-}
-
-.page-header__contacts {
-  flex-direction: row;
-  justify-content: space-between;
-  flex: auto;
-
-  @include media-tablet() {
-    order: 2;
-    flex-direction: column;
-  }
-}
-
-.page-header__contacts-inner {
-  @include indent();
-  @include flex();
-  flex-direction: column;
-}
-
-.page-header__contacts-link {
-  // padding: 0.5em;
-  color: #040d0d;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.8;
-  }
-}
-
-.page-header__contacts-tel {
-  // font-family: Roboto;
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-.page-header__contacts-mob {
-  position: relative;
-  // font-family: Roboto;
-  // font-size: 13px;
-  // font-weight: 300;
-  // line-height: 20px;
-}
-
-.page-header__contacts-email {
-  color: #4673ab;
-  text-decoration: underline;
-}
-
-.page-header__contacts-skype {
-  position: relative;
+  max-width: 138px;
 }
 
 .page-header__reg {
   // font-size: 13px;
   // line-height: 20px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   @include indent();
   padding: 0.5em 0;
+  margin-bottom: 10px;
 
   & .page-header__reg-link {
     // display: block;
@@ -165,10 +64,56 @@
   }
 }
 
+.page-header__logo {
+  width: 138px;
+  height: 42px;
+  max-height: 25px;
+
+  @include media-tablet() {
+    // outline: 4px dashed crimson;
+    // width: 197px;
+    // height: 42px;
+  }
+}
+
+// USER
+
+.page-header__user-nav {
+  // outline: 4px dashed teal;
+  margin-left: auto;
+  max-width: 110px;
+
+  @include media-tablet() {
+    // order: 3;
+    margin-left: 0;
+  }
+}
+
+.page-header__user-top {
+  @include indent();
+  @include flex();
+  padding-top: 10px;
+  margin-bottom: 15px;
+
+  @include media-tablet() {
+    // margin-bottom: 15px;
+  }
+}
+
 .page-header__user-container {
   @include indent();
   @include flex();
+  padding-left: 20px;
   justify-content: space-around;
+}
+
+.page-header__user-bottom {
+  display: none;
+
+  @include media-tablet() {
+    @include indent();
+    // @include flex();
+  }
 }
 
 .page-header__user-link {
@@ -186,10 +131,20 @@
   }
 }
 
-.page-header__favorites,
-.page-header__compare {
-  position: relative;
-  color: #363c3e;
+.page-header__user-search {
+  font-size: 0;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .page-header__cart {
@@ -197,33 +152,129 @@
   width: 22px;
   height: 22px;
 
-  outline: 3px dashed crimson;
+  @include media-tablet() {
+    // width: 195px;
+    // height: 52px;
+    // background-image: url("../../img/tablet/cart-bg.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+  }
 }
 
-.page-header__cart {
-  @include media-tablet() {
-    width: 195px;
-    height: 52px;
+.page-header__login {
+  // display: none;
 
-    background-image: url("../../img/tablet/cart-bg.jpg");
+  @include media-tablet() {
+    // display: block;
+    // min-width: 250px;
+  }
+}
+
+
+// CONTACTS
+
+.page-header__contacts {
+  flex-direction: row;
+  justify-content: space-between;
+  flex: auto;
+  width: 100%;
+  max-width: 100%;
+  // outline: 4px dashed green;
+
+  @include media-tablet() {
+    // order: 2;
+    // flex-direction: column;
+  }
+}
+
+.page-header__contacts-inner {
+  @include indent();
+  @include flex();
+  flex-direction: column;
+}
+
+.page-header__contacts-link {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  // padding: 0.5em;
+  color: #040d0d;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.page-header__contacts-tel {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 3px;
+}
+
+.page-header__contacts-mob {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+
+  @include flex();
+  align-items: center;
+  
+  & .page-header__contacts-icon {
+    width: 16px;
+    height: 18px;
+    margin-right: 2px;
+
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center center;
+  }
+
+  & .page-header__contacts-icon--pur {
+    background-image: url("../../img/mobile/phone-purple.png");
+  }
+
+  & .page-header__contacts-icon--grn {
+    background-image: url("../../img/mobile/phone-green.png");
   }
 }
 
-.page-header__logo {
-  width: 138px;
-  height: 42px;
+.page-header__contacts-email {
+  color: #4673ab;
+  text-decoration: underline;
+}
 
-  @include media-tablet() {
-    outline: 4px dashed crimson;
-    width: 197px;
-    height: 42px;
+.page-header__contacts-skype {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../img/mobile/skype.png");
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
+
+
+.page-header__favorites,
+.page-header__compare {
+  position: relative;
+  color: #363c3e;
+}
+
 
 .page-header__search {
-  // display: none;
+  display: none;
 
   @include media-max() {
       @include indent();

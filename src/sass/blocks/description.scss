@@ -6,7 +6,7 @@
         @include indent();
         width: 100%;
         max-width: 100%;
-        @include flex();
+        // @include flex();
         margin-bottom: 60px;
     }
 }

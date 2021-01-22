@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>HoMyRu</title> 
+      <title>HoMyRu</title>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
    <body>
       <nav class="main-nav">
          <div class="wrapper main-nav__main-nav">
-            <button class="main-nav__btn" type="button">Меню</button>
+            <button class="main-nav__btn" type="button"><i class="main-nav__btn-icon"></i> Меню</button>
             <ul class="main-nav__list">
                <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог</a></li>
                <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
@@ -32,686 +32,631 @@
          </div>
       </nav>
       <div class="wrapper">
-        <h1 class="visually-hidden">Homyru интеренет-магазин бытовой техники</h1>
-        <header class="page-header">
-
-           <div class="page-header__info">
-
-              <div class="page-header__info-block page-header__left">
-                 <p class="page-header__reg">Ваш регион: <a class="page-header__reg-link" href="#">Москва</a></p>
-                 <picture>
+         <h1 class="visually-hidden">Homyru интеренет-магазин бытовой техники</h1>
+         <header class="page-header">
+            <div class="page-header__block page-header__logo-container">
+               <p class="page-header__reg">Ваш регион: <a class="page-header__reg-link" href="#">Москва</a></p>
+               <picture>
                   <!--<source type="image/webp" media="(min-width: 1000px)" srcset="img/desktop/logo-desktop.webp">-->
                   <source media="(min-width: 1000px)" srcset="img/desktop/logo-desktop.png">
                   <!--<source type="image/webp" media="(min-width: 750px)" srcset="img/tablet/logo-tablet.webp">-->
                   <source media="(min-width: 750px)" srcset="img/tablet/logo-tablet.png">
                   <!--<source type="image/webp" srcset="img/mobile/logo.webp">-->
                   <img class="page-header__logo" src="img/mobile/logo.png" alt="HoMyRu логотип">
-                 </picture>
-              </div>
-
-              <div class="page-header__info-block page-header__user-nav">
+               </picture>
+            </div>
+            <div class="page-header__block page-header__user-nav">
                <div class="page-header__user-top">
-                 <a class="page-header__user-link page-header__login" href="#">Войти</a>
-                 <a class="page-header__user-link page-header__account" href="#">Личный кабинет</a>
+                  <!--<a class="page-header__user-link page-header__login" href="#">Войти</a>-->
+                  <a class="page-header__user-link page-header__account" href="#">Личный кабинет</a>
                </div>
-                 
                <div class="page-header__user-container">
-                <a class="page-header__user-link page-header__cart" href="#">Корзина</a>
-                <!--<a class="page-header__user-link page-header__search" href="#">Поиск</a>-->
+                  <a class="page-header__user-link page-header__user-search" href="#">Поиск
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><g><g><path fill="#ff5816" d="M21.657 21.676a1.22 1.22 0 0 1-.832.324c-.33 0-.638-.127-.866-.356l-5.472-5.487a9.348 9.348 0 0 1-5.277 1.608c-5.08 0-9.212-3.985-9.212-8.883S4.13 0 9.21 0c5.079 0 9.211 3.984 9.211 8.882 0 2.097-.765 4.11-2.16 5.71l5.43 5.446a1.13 1.13 0 0 1-.034 1.638zM2.401 8.882c0 3.62 3.054 6.565 6.809 6.565 3.754 0 6.808-2.945 6.808-6.565 0-3.62-3.054-6.565-6.808-6.565-3.755 0-6.81 2.945-6.81 6.565z"/></g></g></svg>
+                  </a>
+                  <a class="page-header__user-link page-header__cart" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22"><g><g><path fill="#ff5816" d="M11.668 19.91A2.1 2.1 0 0 1 9.558 22a2.1 2.1 0 0 1-2.109-2.09 2.1 2.1 0 0 1 2.11-2.09 2.1 2.1 0 0 1 2.109 2.09zm9.207 0a2.1 2.1 0 0 1-2.11 2.09 2.1 2.1 0 0 1-2.11-2.09c0-1.154.944-2.09 2.11-2.09a2.1 2.1 0 0 1 2.11 2.09zM25.23 8.357l-2.595 7.634s-.212 1.134-1.31 1.134H8.235c-1.305 0-1.36-1.423-1.36-1.423L5.231 3.5 1.017 2.435a1.173 1.173 0 0 1-.855-1.428A1.186 1.186 0 0 1 1.603.16L6.6 1.422c.471.12.821.513.882.991l.75 6.047.787 6.206h11.845l.616-2.056-9.93-.004a.977.977 0 0 1-.98-.973c0-.536.439-.972.98-.972l10.511-.002.656-2.199-10.338.001c-.584 0-1.058-.47-1.058-1.048 0-.579.474-1.048 1.058-1.048l11.685.001c1.936 0 1.167 1.992 1.167 1.992z"/></g></g></svg>Корзина</a>
                </div>
-
                <div class="page-header__user-bottom">
                   <a class="page-header__user-link page-header__favorites" href="#">Избранное</a>
-                 <a class="page-header__user-link page-header__compare" href="#">Сравнение</a>
+                  <a class="page-header__user-link page-header__compare" href="#">Сравнение</a>
                </div>
-              </div>
-
-              <div class="page-header__info-block page-header__search">
-                 <div class="page-header__search-container">
+            </div>
+            <div class="page-header__block page-header__search">
+               <div class="page-header__search-container">
                   <p class="page-header__search-paragraph">VoIP решения
-                     для экономных людей</p>
-                    <form class="page-header__search-form" action="#" method="GET">
-                       <label>
-                        <input type="text" name="search" placeholder="Поиск по сайту">
-                       </label>
-                       <button type="submit">искать</button>
-                    </form>
-                 </div>
-                 
-              </div>
-
-              <div class="page-header__info-block page-header__contacts">
-                 <div class="page-header__contacts-inner">
+                     для экономных людей
+                  </p>
+                  <form class="page-header__search-form" action="#" method="GET">
+                     <label>
+                     <input type="text" name="search" placeholder="Поиск по сайту">
+                     </label>
+                     <button type="submit">искать</button>
+                  </form>
+               </div>
+            </div>
+            <div class="page-header__block page-header__contacts">
+               <div class="page-header__contacts-inner">
                   <a class="page-header__contacts-link page-header__contacts-tel" href="tel:+74952554466">+7 495 2-55-44-66</a>
-                  <a class="page-header__contacts-link page-header__contacts-mob" href="tel:+79111111111"> +7 911 111-11-11 </a>
-                 </div>
-                 <div class="page-header__contacts-inner">
+                  <a class="page-header__contacts-link page-header__contacts-mob" href="tel:+79111111111"><i class="page-header__contacts-icon page-header__contacts-icon--pur"></i> <i class="page-header__contacts-icon page-header__contacts-icon--grn"></i> +7 911 111-11-11 </a>
+               </div>
+               <div class="page-header__contacts-inner">
                   <a class="page-header__contacts-link page-header__contacts-email" href="mailto:info@homy.ru">info@homy.ru</a>
                   <a class="page-header__contacts-link page-header__contacts-skype" href="#">skype-on.06</a>
-                 </div>
-              </div>
-           </div>
-        </header>
-        <main class="page-main">
-
-           <section class="categories">
-              <h2 class="visually-hidden">Категории товаров</h2>
-              <ul class="categories__list">
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">VOIP
-                  ОБОРУДОВАНИЕ</a>
-                 </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">SKYPE
-                  ОБОРУДОВАНИЕ</a>
-                 </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">GSM
-                  ОБОРУДОВАНИЕ</a>
-                 </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">ВИДЕО-
-                  ОБОРУДОВАНИЕ</a>
-                 </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">РАДИО И DECT
-                  ТЕЛЕФОНЫ</a>
-                 </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">ГАРНИТУРЫ</a>
+               </div>
+            </div>
+         </header>
+         <main class="page-main">
+            <section class="categories">
+               <h2 class="visually-hidden">Категории товаров</h2>
+               <ul class="categories__list">
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">VOIP
+                     ОБОРУДОВАНИЕ</a>
                   </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">ЭЛЕКТРОННЫЕ
-                  ЗАМКИ</a>
-                 </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">ДОМОФОННЫЕ
-                  СИСТЕМЫ</a>
-                 </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">СИСТЕМЫ ЗАПИСИ
-                  ТЕЛЕФОННЫХ РАЗГОВОРОВ</a>
-                 </li>
-                 <li class="categories__item">
-                    <a class="categories__link" href="#">СЕТЕВОЕ
-                  ОБОРУДОВАНИЕ</a>
-                 </li>
-                 <li class="categories__item">
-                  <a class="categories__link" href="#"></a>
-               </li>
-              </ul>
-           </section>
-
-           <section class="news">
-            <h2 class="visually-hidden">Новости</h2>
-            
-            <aside class="news__sidebar">
-               <h3 class="news__title">Новости компании</h3>
-
-               <ul class="news__list">
-                  <li class="news__item">
-                     <div class="news__item-pic">
-                        <span class="news__item-date"><i>15</i> октября</span>
-                     </div>
-                     <div class="news__item-new">
-                        <a class="news__item-title" href="#">Новинка от «Элтекс» - точка доступа WEP-2ac</a>
-                        <p class="news__item-text">Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.</p>
-                     </div>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">SKYPE
+                     ОБОРУДОВАНИЕ</a>
                   </li>
-                  <li class="news__item">
-                     <div class="news__item-pic">
-                        <span class="news__item-date"><i>07</i> октября</span>
-                     </div>
-                     <div class="news__item-new">
-                        <a class="news__item-title" href="#">Новинка от компании Grandstream!</a>
-                        <p class="news__item-text">Скоро в продаже мощный маршрутизатор GWN7000!</p>
-                     </div>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">GSM
+                     ОБОРУДОВАНИЕ</a>
                   </li>
-                  <li class="news__item">
-                     <div class="news__item-pic">
-                        <span class="news__item-date"><i>28</i> сентября</span>
-                     </div>
-                     <div class="news__item-new">
-                        <a class="news__item-title" href="#">WiFi точка доступа от компании Grandstream!</a>
-                        <p class="news__item-text">Уже скоро в продаже!</p>
-                     </div>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">ВИДЕО-
+                     ОБОРУДОВАНИЕ</a>
+                  </li>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">РАДИО И DECT
+                     ТЕЛЕФОНЫ</a>
+                  </li>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">ГАРНИТУРЫ</a>
+                  </li>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">ЭЛЕКТРОННЫЕ
+                     ЗАМКИ</a>
+                  </li>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">ДОМОФОННЫЕ
+                     СИСТЕМЫ</a>
+                  </li>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">СИСТЕМЫ ЗАПИСИ
+                     ТЕЛЕФОННЫХ РАЗГОВОРОВ</a>
+                  </li>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#">СЕТЕВОЕ
+                     ОБОРУДОВАНИЕ</a>
+                  </li>
+                  <li class="categories__item">
+                     <a class="categories__link" href="#"></a>
                   </li>
                </ul>
-               <a class="news__all-link" href="#">Все новости</a>
-            </aside>
-
-            <div class="news__banner">
-               <div class="news__banner-top">
-                  <p class="news__banner-top-text">Более 2000 товаров от 40+ производителей в одном магазине. <span>Любые решения под ключ.</span></p>
+            </section>
+            <section class="news">
+               <h2 class="visually-hidden">Новости</h2>
+               <aside class="news__sidebar">
+                  <h3 class="news__title">Новости компании</h3>
+                  <ul class="news__list">
+                     <li class="news__item">
+                        <div class="news__item-pic">
+                           <span class="news__item-date"><i>15</i> октября</span>
+                        </div>
+                        <div class="news__item-new">
+                           <a class="news__item-title" href="#">Новинка от «Элтекс» - точка доступа WEP-2ac</a>
+                           <p class="news__item-text">Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.</p>
+                        </div>
+                     </li>
+                     <li class="news__item">
+                        <div class="news__item-pic">
+                           <span class="news__item-date"><i>07</i> октября</span>
+                        </div>
+                        <div class="news__item-new">
+                           <a class="news__item-title" href="#">Новинка от компании Grandstream!</a>
+                           <p class="news__item-text">Скоро в продаже мощный маршрутизатор GWN7000!</p>
+                        </div>
+                     </li>
+                     <li class="news__item">
+                        <div class="news__item-pic">
+                           <span class="news__item-date"><i>28</i> сентября</span>
+                        </div>
+                        <div class="news__item-new">
+                           <a class="news__item-title" href="#">WiFi точка доступа от компании Grandstream!</a>
+                           <p class="news__item-text">Уже скоро в продаже!</p>
+                        </div>
+                     </li>
+                  </ul>
+                  <a class="news__all-link" href="#">Все новости</a>
+               </aside>
+               <div class="news__banner">
+                  <div class="news__banner-top">
+                     <p class="news__banner-top-text">Более 2000 товаров от 40+ производителей в одном магазине. <span>Любые решения под ключ.</span></p>
+                  </div>
+                  <div class="news__banner-slider">
+                     <div class="news__banner-slider-slides">
+                        <div class="news__banner-slider-slide">
+                           <h3 class="news__banner-slide-title">
+                              <span class="news__banner-title-top">Революционное решение</span>
+                              <span class="news__banner-title-center">на рынке среди систем ВКС!</span>
+                              <span class="news__banner-title-bottom">GVC 3200 от компании Grandstream это:</span>
+                           </h3>
+                           <ul class="news__banner-slide-list">
+                              <li class="news__banner-slide-item">
+                                 9-ти сторонняя аудио/видео конференция без покупки дополнительного ПО
+                              </li>
+                              <li class="news__banner-slide-item">
+                                 2 Мпикс камера CMOS с разрешением 1920Hx1080V@15fps
+                              </li>
+                              <li class="news__banner-slide-item">
+                                 Гигабитный порт, встроенный модуль WiFi (802.11n) и Bluetooth 4.0, Miracast
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="news__banner-slider-wrapper">
+                        <div class="news__banner-slider-wrapper-arrows">
+                           <button class="news__banner-slider-btn news__banner-slider-prev" type="button"></button>
+                           <button class="news__banner-slider-btn news__banner-slider-next" type="button"></button>
+                        </div>
+                     </div>
+                     <ul class="news__banner-slider-nums">
+                        <li class="news__banner-slider-num news__banner-slider-num--active"></li>
+                        <li class="news__banner-slider-num"></li>
+                        <li class="news__banner-slider-num"></li>
+                        <li class="news__banner-slider-num"></li>
+                        <li class="news__banner-slider-num"></li>
+                     </ul>
+                  </div>
                </div>
-
-               <div class="news__banner-slider">
-                  <div class="news__banner-slider-slides">
-                     <div class="news__banner-slider-slide">
-                        <h3 class="news__banner-slide-title">
-                           <span class="news__banner-title-top">Революционное решение</span>
-                           <span class="news__banner-title-center">на рынке среди систем ВКС!</span>
-                           <span class="news__banner-title-bottom">GVC 3200 от компании Grandstream это:</span>
-                        </h3>
-                        <ul class="news__banner-slide-list">
-                           <li class="news__banner-slide-item">
-                              9-ти сторонняя аудио/видео конференция без покупки дополнительного ПО
-                           </li>
-                           <li class="news__banner-slide-item">
-                              2 Мпикс камера CMOS с разрешением 1920Hx1080V@15fps
-                           </li>
-                           <li class="news__banner-slide-item">
-                              Гигабитный порт, встроенный модуль WiFi (802.11n) и Bluetooth 4.0, Miracast
-                           </li>
-                        </ul>
+            </section>
+            <section class="catalog">
+               <h2 class="visually-hidden">Каталог</h2>
+               <div class="catalog__inner">
+                  <div class="catalog__inner-top">
+                     <a href="#" class="catalog__title">Новинки</a>
+                     <div class="slider__wrapper">
+                        <div class="slider__arrows">
+                           <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
+                           <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
+                        </div>
                      </div>
                   </div>
-
-                  <div class="news__banner-slider-wrapper">
-                     <div class="news__banner-slider-wrapper-arrows">
-                        <button class="news__banner-slider-btn news__banner-slider-prev" type="button"></button>
-                        <button class="news__banner-slider-btn news__banner-slider-next" type="button"></button>
-                     </div>
-                  </div>
-
-                  <ul class="news__banner-slider-nums">
-                     <li class="news__banner-slider-num news__banner-slider-num--active"></li>
-                     <li class="news__banner-slider-num"></li>
-                     <li class="news__banner-slider-num"></li>
-                     <li class="news__banner-slider-num"></li>
-                     <li class="news__banner-slider-num"></li>
+                  <ul class="catalog__list">
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-1.jpg" width="154" height="162" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-3.jpg" width="87" height="164" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-2.jpg" width="170" height="170" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-4.jpg" width="192" height="152" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
                   </ul>
                </div>
-
-            </div>
-           </section>
-
-           <section class="catalog">
-            <h2 class="visually-hidden">Каталог</h2>
-            <div class="catalog__inner">
-               <div class="catalog__inner-top">
-                  <a href="#" class="catalog__title">Новинки</a>
-                  <div class="slider__wrapper">
-                     <div class="slider__arrows">
-                        <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
-                        <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
-                     </div>
-                  </div>
-               </div>
-               
-               <ul class="catalog__list">
-
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-1.jpg" width="154" height="162" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-3.jpg" width="87" height="164" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-2.jpg" width="170" height="170" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-4.jpg" width="192" height="152" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-            <div class="catalog__inner">
-               <div class="catalog__inner-top">
-                  <a href="#" class="catalog__title">Рекомендуем</a>
-                  <div class="slider__wrapper">
-                     <div class="slider__arrows">
-                        <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
-                        <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
-                     </div>
-                  </div>
-               </div>
-               
-               <ul class="catalog__list">
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-2.jpg" width="170" height="170" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-4.jpg" width="192" height="152" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-1.jpg" width="154" height="162" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-3.jpg" width="87" height="164" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-            <div class="catalog__inner">
-               <div class="catalog__inner-top">
-                  <a href="#" class="catalog__title">Распродажа</a>
-                  <div class="slider__wrapper">
-                     <div class="slider__arrows">
-                        <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
-                        <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
-                     </div>
-                  </div>
-               </div>
-               
-               <ul class="catalog__list">
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-3.png" width="87" height="164" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-2.jpg" width="170" height="170" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-4.jpg" width="192" height="152" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-                  <li class="catalog__item">
-                     <div class="catalog__img-container">
-                        <img class="catalog__img" src="img/item-1.jpg" width="154" height="162" alt="IP телефон Siemens Gigaset C530A IP">
-                     </div>
-                     <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
-                     <p class="catalog__item-price">
-                        <span>Цена:</span>
-                        <span class="catalog__item-total">12 300 р.</span>
-                        <span class="catalog__item-discount">15 500  р.</span>
-                     </p>
-                     <div class="catalog__item-buttons">
-                        <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
-                        <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-            <div class="catalog__inner">
-               <div class="catalog__inner-top">
-                  <a href="#" class="catalog__title">Акции</a>
-                  <div class="slider__wrapper">
-                     <div class="slider__arrows">
-                        <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
-                        <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
-                     </div>
-                  </div>
-               </div>
-               
-               <ul class="catalog__list">
-                  <li class="catalog__item catalog__item--actions">
-                     <a href="#" class="catalog__item-title">Название акции</a>
-                     <div class="catalog__item-banner catalog__item-banner-1"></div>
-                     <p class="catalog__item-banner-text">Важными преимуществом использования айпи телефона вместо обычного, является
-                        на порядок более низкая цена соединения. </p>
-                     <div class="catalog__item-banner-timer">
-                        <div class="catalog__item-timer-inner">
-                           <div class="catalog__item-timer-days">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">0</span>
-                                 <span class="catalog__item-timer-num">0</span>
-                              </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>дней</span>
-                              </div>     
-                           </div>
-                           
-                           <span>:</span>
-
-                           <div class="catalog__item-timer-hours">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">0</span>
-                                 <span class="catalog__item-timer-num">0</span>
-                              </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>часов</span>
-                              </div>
-                           </div>
-                           
-                           <span>:</span>
-
-                           <div class="catalog__item-timer-mins">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">1</span>
-                                 <span class="catalog__item-timer-num">6</span>
-                              </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>минут</span>
-                              </div>
-                           </div>
-                           
+               <div class="catalog__inner">
+                  <div class="catalog__inner-top">
+                     <a href="#" class="catalog__title">Рекомендуем</a>
+                     <div class="slider__wrapper">
+                        <div class="slider__arrows">
+                           <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
+                           <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
                         </div>
                      </div>
-                     <a class="catalog__item-banner-details" href="#">Подробнее</a>
-                  </li>
-
-                  <li class="catalog__item catalog__item--actions">
-                     <a href="#" class="catalog__item-title">Название акции</a>
-                     <div class="catalog__item-banner catalog__item-banner-2"></div>
-                     <p class="catalog__item-banner-text">Важными преимуществом использования айпи телефона вместо обычного, является
-                        на порядок более низкая цена соединения. </p>
-
-                     <div class="catalog__item-banner-timer catalog__item-banner-timeless">
-                        <div class="catalog__item-timer-inner catalog__item-timeless-inner">
-                           бессрочно
+                  </div>
+                  <ul class="catalog__list">
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-2.jpg" width="170" height="170" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-4.jpg" width="192" height="152" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-1.jpg" width="154" height="162" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-3.jpg" width="87" height="164" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="catalog__inner">
+                  <div class="catalog__inner-top">
+                     <a href="#" class="catalog__title">Распродажа</a>
+                     <div class="slider__wrapper">
+                        <div class="slider__arrows">
+                           <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
+                           <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
                         </div>
                      </div>
-                     <a class="catalog__item-banner-details" href="#">Подробнее</a>
-                  </li>
-
-                  <li class="catalog__item catalog__item--actions">
-                     <a href="#" class="catalog__item-title">Название акции</a>
-                     <div class="catalog__item-banner catalog__item-banner-3"></div>
-                     <p class="catalog__item-banner-text">Важными преимуществом использования айпи телефона вместо обычного, является
-                        на порядок более низкая цена соединения. </p>
-                     <div class="catalog__item-banner-timer">
-                        <div class="catalog__item-timer-inner">
-                           <div class="catalog__item-timer-days">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">0</span>
-                                 <span class="catalog__item-timer-num">0</span>
-                              </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>дней</span>
-                              </div>     
-                           </div>
-                           
-                           <span>:</span>
-
-                           <div class="catalog__item-timer-hours">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">0</span>
-                                 <span class="catalog__item-timer-num">0</span>
-                              </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>часов</span>
-                              </div>
-                           </div>
-                           
-                           <span>:</span>
-
-                           <div class="catalog__item-timer-mins">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">1</span>
-                                 <span class="catalog__item-timer-num">6</span>
-                              </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>минут</span>
-                              </div>
-                           </div>
-                           
+                  </div>
+                  <ul class="catalog__list">
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-3.png" width="87" height="164" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-2.jpg" width="170" height="170" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-4.jpg" width="192" height="152" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                     <li class="catalog__item">
+                        <div class="catalog__img-container">
+                           <img class="catalog__img" src="img/item-1.jpg" width="154" height="162" alt="IP телефон Siemens Gigaset C530A IP">
+                        </div>
+                        <a href="#" class="catalog__item-title">IP телефон Siemens Gigaset C530A IP</a>
+                        <p class="catalog__item-price">
+                           <span>Цена:</span>
+                           <span class="catalog__item-total">12 300 р.</span>
+                           <span class="catalog__item-discount">15 500  р.</span>
+                        </p>
+                        <div class="catalog__item-buttons">
+                           <button class="catalog__item-btn page-footer__flex" type="button">Купить</button>
+                           <a class="catalog__item-btn catalog__item-details" href="#">Подробнее</a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="catalog__inner">
+                  <div class="catalog__inner-top">
+                     <a href="#" class="catalog__title">Акции</a>
+                     <div class="slider__wrapper">
+                        <div class="slider__arrows">
+                           <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
+                           <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
                         </div>
                      </div>
-                     <a class="catalog__item-banner-details" href="#">Подробнее</a>
-                  </li>
-
-                  <li class="catalog__item catalog__item--actions">
-                     <a href="#" class="catalog__item-title">Название акции</a>
-                     <div class="catalog__item-banner catalog__item-banner-4"></div>
-                     <p class="catalog__item-banner-text">Важными преимуществом использования айпи телефона вместо обычного, является
-                        на порядок более низкая цена соединения. </p>
-                     <div class="catalog__item-banner-timer">
-                        <div class="catalog__item-timer-inner">
-                           <div class="catalog__item-timer-days">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">0</span>
-                                 <span class="catalog__item-timer-num">0</span>
+                  </div>
+                  <ul class="catalog__list">
+                     <li class="catalog__item catalog__item--actions">
+                        <a href="#" class="catalog__item-title">Название акции</a>
+                        <div class="catalog__item-banner catalog__item-banner-1"></div>
+                        <p class="catalog__item-banner-text">Важными преимуществом использования айпи телефона вместо обычного, является
+                           на порядок более низкая цена соединения. 
+                        </p>
+                        <div class="catalog__item-banner-timer">
+                           <div class="catalog__item-timer-inner">
+                              <div class="catalog__item-timer-days">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">0</span>
+                                    <span class="catalog__item-timer-num">0</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>дней</span>
+                                 </div>
                               </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>дней</span>
-                              </div>     
-                           </div>
-                           
-                           <span>:</span>
-
-                           <div class="catalog__item-timer-hours">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">0</span>
-                                 <span class="catalog__item-timer-num">0</span>
+                              <span>:</span>
+                              <div class="catalog__item-timer-hours">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">0</span>
+                                    <span class="catalog__item-timer-num">0</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>часов</span>
+                                 </div>
                               </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>часов</span>
-                              </div>
-                           </div>
-                           
-                           <span>:</span>
-
-                           <div class="catalog__item-timer-mins">
-                              <div class="catalog__item-timer-row">
-                                 <span class="catalog__item-timer-num">1</span>
-                                 <span class="catalog__item-timer-num">6</span>
-                              </div>
-                              <div class="catalog__item-timer-row">
-                                 <span>минут</span>
+                              <span>:</span>
+                              <div class="catalog__item-timer-mins">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">1</span>
+                                    <span class="catalog__item-timer-num">6</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>минут</span>
+                                 </div>
                               </div>
                            </div>
-                           
                         </div>
+                        <a class="catalog__item-banner-details" href="#">Подробнее</a>
+                     </li>
+                     <li class="catalog__item catalog__item--actions">
+                        <a href="#" class="catalog__item-title">Название акции</a>
+                        <div class="catalog__item-banner catalog__item-banner-2"></div>
+                        <p class="catalog__item-banner-text">Важными преимуществом использования айпи телефона вместо обычного, является
+                           на порядок более низкая цена соединения. 
+                        </p>
+                        <div class="catalog__item-banner-timer catalog__item-banner-timeless">
+                           <div class="catalog__item-timer-inner catalog__item-timeless-inner">
+                              бессрочно
+                           </div>
+                        </div>
+                        <a class="catalog__item-banner-details" href="#">Подробнее</a>
+                     </li>
+                     <li class="catalog__item catalog__item--actions">
+                        <a href="#" class="catalog__item-title">Название акции</a>
+                        <div class="catalog__item-banner catalog__item-banner-3"></div>
+                        <p class="catalog__item-banner-text">Важными преимуществом использования айпи телефона вместо обычного, является
+                           на порядок более низкая цена соединения. 
+                        </p>
+                        <div class="catalog__item-banner-timer">
+                           <div class="catalog__item-timer-inner">
+                              <div class="catalog__item-timer-days">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">0</span>
+                                    <span class="catalog__item-timer-num">0</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>дней</span>
+                                 </div>
+                              </div>
+                              <span>:</span>
+                              <div class="catalog__item-timer-hours">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">0</span>
+                                    <span class="catalog__item-timer-num">0</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>часов</span>
+                                 </div>
+                              </div>
+                              <span>:</span>
+                              <div class="catalog__item-timer-mins">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">1</span>
+                                    <span class="catalog__item-timer-num">6</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>минут</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <a class="catalog__item-banner-details" href="#">Подробнее</a>
+                     </li>
+                     <li class="catalog__item catalog__item--actions">
+                        <a href="#" class="catalog__item-title">Название акции</a>
+                        <div class="catalog__item-banner catalog__item-banner-4"></div>
+                        <p class="catalog__item-banner-text">Важными преимуществом использования айпи телефона вместо обычного, является
+                           на порядок более низкая цена соединения. 
+                        </p>
+                        <div class="catalog__item-banner-timer">
+                           <div class="catalog__item-timer-inner">
+                              <div class="catalog__item-timer-days">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">0</span>
+                                    <span class="catalog__item-timer-num">0</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>дней</span>
+                                 </div>
+                              </div>
+                              <span>:</span>
+                              <div class="catalog__item-timer-hours">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">0</span>
+                                    <span class="catalog__item-timer-num">0</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>часов</span>
+                                 </div>
+                              </div>
+                              <span>:</span>
+                              <div class="catalog__item-timer-mins">
+                                 <div class="catalog__item-timer-row">
+                                    <span class="catalog__item-timer-num">1</span>
+                                    <span class="catalog__item-timer-num">6</span>
+                                 </div>
+                                 <div class="catalog__item-timer-row">
+                                    <span>минут</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <a class="catalog__item-banner-details" href="#">Подробнее</a>
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <section class="popular">
+               <h2 class="page-main__title  popular__title">Что покупают прямо сейчас</h2>
+               <ul class="popular__list">
+                  <li class="popular__item">
+                     <div class="popular__img-container">
+                        <img class="popular__img" src="img/item-5.jpg" width="195" height="195" alt="Замок дверной Samsung SHS-2320 XMK/EN">
                      </div>
-                     <a class="catalog__item-banner-details" href="#">Подробнее</a>
+                     <a href="#" class="popular__item-title">Замок дверной Samsung SHS-2320 XMK/EN</a>
                   </li>
-
-               </ul>
-            </div>
-           </section>
-
-           <section class="popular">
-              <h2 class="page-main__title  popular__title">Что покупают прямо сейчас</h2>
-              <ul class="popular__list">
-                 <li class="popular__item">
-                  <div class="popular__img-container">
-                     <img class="popular__img" src="img/item-5.jpg" width="195" height="195" alt="Замок дверной Samsung SHS-2320 XMK/EN">
-                  </div> 
-                  
-                  <a href="#" class="popular__item-title">Замок дверной Samsung SHS-2320 XMK/EN</a>
-                 </li>
-                 
-                 <li class="popular__item">
-                  <div class="popular__img-container">
-                     <img class="popular__img" src="img/item-6.jpg" width="230" height="171" alt="GSM-VoIP шлюз OpenVox
-                  VoxStack VS-GW2120-4G">
-                  </div> 
-                  
-                  <a href="#" class="popular__item-title">GSM-VoIP шлюз OpenVox
+                  <li class="popular__item">
+                     <div class="popular__img-container">
+                        <img class="popular__img" src="img/item-6.jpg" width="230" height="171" alt="GSM-VoIP шлюз OpenVox
+                           VoxStack VS-GW2120-4G">
+                     </div>
+                     <a href="#" class="popular__item-title">GSM-VoIP шлюз OpenVox
                      VoxStack VS-GW2120-4G</a>
-                 </li>
-
-                 <li class="popular__item">
-                  <div class="popular__img-container">
-                     <img class="popular__img" src="img/item-7.jpg" width="180" height="158" alt="Замок дверной Samsung SHS-2320 XMK/EN">
-                  </div> 
-                  
-                  <a href="#" class="popular__item-title">IP телефон Grandstream
+                  </li>
+                  <li class="popular__item">
+                     <div class="popular__img-container">
+                        <img class="popular__img" src="img/item-7.jpg" width="180" height="158" alt="Замок дверной Samsung SHS-2320 XMK/EN">
+                     </div>
+                     <a href="#" class="popular__item-title">IP телефон Grandstream
                      GXP2130</a>
-                 </li>
-
-                 <li class="popular__item">
-                  <div class="popular__img-container">
-                     <img class="popular__img" src="img/item-8.jpg" width="212" height="212" alt="GSM телефон BQD–2051
-                  Rome">
-                  </div> 
-                  
-                  <a href="#" class="popular__item-title">GSM телефон BQD–2051
+                  </li>
+                  <li class="popular__item">
+                     <div class="popular__img-container">
+                        <img class="popular__img" src="img/item-8.jpg" width="212" height="212" alt="GSM телефон BQD–2051
+                           Rome">
+                     </div>
+                     <a href="#" class="popular__item-title">GSM телефон BQD–2051
                      Rome</a>
-                 </li>
-              </ul>
-           </section>
-
-           <section class="brands">
-            <h2 class="visually-hidden">Наши ключевые бренды</h2>
-            <div class="brands__inner-top">
-               <a class="page-main__title brands__title">Наши ключевые бренды</a>
-               <div class="slider__wrapper">
-                  <div class="slider__arrows">
-                     <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
-                     <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
+                  </li>
+               </ul>
+            </section>
+            <section class="brands">
+               <h2 class="visually-hidden">Наши ключевые бренды</h2>
+               <div class="brands__inner-top">
+                  <a class="page-main__title brands__title">Наши ключевые бренды</a>
+                  <div class="slider__wrapper">
+                     <div class="slider__arrows">
+                        <button class="slider__arrow-btn slider__arrow-prev" type="button"></button>
+                        <button class="slider__arrow-btn slider__arrow-next" type="button"></button>
+                     </div>
                   </div>
                </div>
-            </div>
-
-            <div class="brands__inner-bottom">
-               <img class="brands__img" src="img/tablet/brands.png" width="885" height="52" alt="Наши ключевые бренды">
-            </div>
-           </section>
-
-
-           <section class="advantages">
-            <h2 class="page-main__title  advantages__title">Наши сильные стороны</h2>
-            <ul class="advantages__list">
-               <li class="advantages__item">
-                  <i class="advantages__icon advantages__icon--consult"></i>
-                  Грамотная консультация по каждому товару
-               </li>
-               <li class="advantages__item">
-                  <i class="advantages__icon advantages__icon--pay"></i>
-                  Любые способы оплаты
-               </li>
-               <li class="advantages__item">
-                  <i class="advantages__icon advantages__icon--serv"></i>
-                  Собственный сервисный центр
-               </li>
-               <li class="advantages__item">
-                  <i class="advantages__icon advantages__icon--pickpoint"></i>
-                  Разветвленная сеть самовывоза (Pickpoint)
-               </li>
-            </ul>
-           </section>
-
-           <section class="reason">
-              <h2 class="page-main__title  reason__title">5 причин выбрать нашу компанию</h2>
-              <div class="reason__flex">
-               
-                 <div class="reason__flex-inner">
-                    <h3 class="reason__flex-title reason__flex-title--bad">С чем сталкиваются клиенты в 85% случаев,
-                     когда обращаются к нашим конкурентам?
+               <div class="brands__inner-bottom">
+                  <img class="brands__img" src="img/tablet/brands.png" width="885" height="52" alt="Наши ключевые бренды">
+               </div>
+            </section>
+            <section class="advantages">
+               <h2 class="page-main__title  advantages__title">Наши сильные стороны</h2>
+               <ul class="advantages__list">
+                  <li class="advantages__item">
+                     <i class="advantages__icon advantages__icon--consult"></i>
+                     Грамотная консультация по каждому товару
+                  </li>
+                  <li class="advantages__item">
+                     <i class="advantages__icon advantages__icon--pay"></i>
+                     Любые способы оплаты
+                  </li>
+                  <li class="advantages__item">
+                     <i class="advantages__icon advantages__icon--serv"></i>
+                     Собственный сервисный центр
+                  </li>
+                  <li class="advantages__item">
+                     <i class="advantages__icon advantages__icon--pickpoint"></i>
+                     Разветвленная сеть самовывоза (Pickpoint)
+                  </li>
+               </ul>
+            </section>
+            <section class="reason">
+               <h2 class="page-main__title  reason__title">5 причин выбрать нашу компанию</h2>
+               <div class="reason__flex">
+                  <div class="reason__flex-inner">
+                     <h3 class="reason__flex-title reason__flex-title--bad">С чем сталкиваются клиенты в 85% случаев,
+                        когда обращаются к нашим конкурентам?
                      </h3>
-
                      <ul class="reason__flex-list">
                         <li class="reason__flex-item">
                            <span>1.5 беглых менеджера</span> по продажам со своим сайтом, имитирующие торговую компанию.
@@ -722,7 +667,7 @@
                         </li>
                         <li class="reason__flex-item">
                            <span>Менеджеры по продажам знакомы с оборудованием
-                              лишь на бумаге,</span> часто не знают, что они продают.
+                           лишь на бумаге,</span> часто не знают, что они продают.
                         </li>
                         <li class="reason__flex-item">
                            <span>Компании занимаются только продажей</span>, не проводят
@@ -734,176 +679,167 @@
                            по гарантии.
                         </li>
                      </ul>
-                 </div>
-
-                 <div class="reason__flex-inner">
-                    <h3 class="reason__flex-title reason__flex-title--good">
-                     Какой сервис предложим Вам мы?
-                    </h3>
-                    <ul class="reason__flex-list">
-                     <li class="reason__flex-item">
-                        <span>1.5 беглых менеджера</span> по продажам со своим сайтом, имитирующие торговую компанию.
-                     </li>
-                     <li class="reason__flex-item">
-                        <span>Торговля серым, несертифицированным товаром</span>, что
-                        выливается в проблемы при гарантийном обслуживании.
-                     </li>
-                     <li class="reason__flex-item">
-                        <span>Менеджеры по продажам знакомы с оборудованием
+                  </div>
+                  <div class="reason__flex-inner">
+                     <h3 class="reason__flex-title reason__flex-title--good">
+                        Какой сервис предложим Вам мы?
+                     </h3>
+                     <ul class="reason__flex-list">
+                        <li class="reason__flex-item">
+                           <span>1.5 беглых менеджера</span> по продажам со своим сайтом, имитирующие торговую компанию.
+                        </li>
+                        <li class="reason__flex-item">
+                           <span>Торговля серым, несертифицированным товаром</span>, что
+                           выливается в проблемы при гарантийном обслуживании.
+                        </li>
+                        <li class="reason__flex-item">
+                           <span>Менеджеры по продажам знакомы с оборудованием
                            лишь на бумаге,</span> часто не знают, что они продают.
-                     </li>
-                     <li class="reason__flex-item">
-                        <span>Компании занимаются только продажей</span>, не проводят
-                        установку и настройку оборудования под ключ. Не оказывают техподдержку.
-                     </li>
-                     <li class="reason__flex-item">
-                        <span>Сложная процедура гарантийного ремонта</span> и возврата
-                        товара в случае проблем. Не понятно, куда обращаться
-                        по гарантии.
-                     </li>
-                  </ul>
-                 </div>
-              </div>
-           </section>
-
-           <section class="numbers">
-            <h2 class="page-main__title  numbers__title">Мы в цифрах</h2>
-            <ul class="numbers__list">
-               <li class="numbers__item">
-                  <i class="numbers__icon numbers__icon--1">10</i>
-                  <p class="numbers__item-text">10 лет на рынке</p>
-               </li>
-               <li class="numbers__item">
-                  <i class="numbers__icon numbers__icon--2">25/5</i>
-                  <p class="numbers__item-text">25 профильных специалистов, 5 менеджеров отдела продаж</p>
-               </li> 
-               <li class="numbers__item">
-                  <i class="numbers__icon numbers__icon--3">
+                        </li>
+                        <li class="reason__flex-item">
+                           <span>Компании занимаются только продажей</span>, не проводят
+                           установку и настройку оборудования под ключ. Не оказывают техподдержку.
+                        </li>
+                        <li class="reason__flex-item">
+                           <span>Сложная процедура гарантийного ремонта</span> и возврата
+                           товара в случае проблем. Не понятно, куда обращаться
+                           по гарантии.
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <section class="numbers">
+               <h2 class="page-main__title  numbers__title">Мы в цифрах</h2>
+               <ul class="numbers__list">
+                  <li class="numbers__item">
+                     <i class="numbers__icon numbers__icon--1">10</i>
+                     <p class="numbers__item-text">10 лет на рынке</p>
+                  </li>
+                  <li class="numbers__item">
+                     <i class="numbers__icon numbers__icon--2">25/5</i>
+                     <p class="numbers__item-text">25 профильных специалистов, 5 менеджеров отдела продаж</p>
+                  </li>
+                  <li class="numbers__item">
+                     <i class="numbers__icon numbers__icon--3">
                      <span>2222</span>
                      <span>х</span>
                      <span>100</span>
-                  </i>
-                  <p class="numbers__item-text">2222 товара в каталоге среди 100 брендов</p>
-               </li>
-               <li class="numbers__item">
-                  <i class="numbers__icon numbers__icon--4">29</i>
-                  <p class="numbers__item-text">29 торговых партнеров</p>
-               </li>
-               <li class="numbers__item">
-                  <i class="numbers__icon numbers__icon--5">14</i>
-                  <p class="numbers__item-text">14 отгрузок в сутки</p>
-               </li>
-               <li class="numbers__item">
-                  <i class="numbers__icon numbers__icon--6">1</i>
-                  <p class="numbers__item-text">1 из лидеров рынка</p>
-               </li>
-            </ul>
-           </section>
-
-
-           <section class="partnership">
-             <h2 class="partnership__title">Как с нами работать?</h2>
-             <ul class="partnership__options-list">
-                <li class="partnership__options-item partnership__options-item--active"><a class="partnership__options-link" href="#">В розницу</a></li>
-                <li class="partnership__options-item"><a class="partnership__options-link" href="#">Оптовикам</a></li>
-                <li class="partnership__options-item"><a class="partnership__options-link" href="#">Партнерам</a></li>
-                <li class="partnership__options-item"><a class="partnership__options-link" href="#">Покупая с настройкой</a></li>
-             </ul>
-
-             <ul class="partnership__stages-list">
-                <li class="partnership____stages-item">
-                  1. Обращение через
-                  сайт/по телефону                  
-                </li>
-                <li class="partnership____stages-item">
-                  2. Подтверждение
-                  заказа
-                </li>
-                <li class="partnership____stages-item">
-                  3. Доставка товара
-                </li>
-                <li class="partnership____stages-item">
-                  4. Оплата товара
-                  при получении,
-                  либопредоплата
-                  по безналичному
-                  расчету до п. 3
-                </li>
-             </ul>
-           </section>
-
-           <section class="description">
-            <h2 class="visually-hidden">Описание</h2>
-            <div class="description__column">
-               <p class="description__paragraph">
-                  Интернет магазин Хомиру поможет вам в выборе оборудования для <a class="description__link" href="#">IP телефонии</a> - которая активно используется как в бизнесе для общения с клиентами, партнёрами, поставщиками
-                  и инвесторами по всему миру, так и в повседневной жизни, для разговоров с друзьями и близкими в других городах. Важными преимуществом использования айпи телефона вместо обычного, является на порядок более низкая цена соединения. Звонок в регион, расположенный за несколько тысяч километров от вас, может обойтись намного дешевле, чем разговор по сотовому телефону в пределах города.
-               </p>
-               <p class="description__paragraph">
-                  Для <a class="description__link" href="#">подключения к услугам IP-телефонии</a> требуется только стабильный выход в интернет и устройство коммуникации, например, компьютер с гарнитурой или ip телефон.
-               </p>
-            </div>
-            <div class="description__column">
-               <p class="description__paragraph">
-                  Наш магазин айпи телефонии Homy предлагает <a class="description__link" href="#">полный спектр решений</a> для бизнеса и частных лиц в сфере организации современной связи (в том числе Skype телефоны и SIP телефоны). IP телефоны очень просты в использовании, так как применяется привычный всем, практически естественный интерфейс обычного телефона. Для работы с ним не требуется каких-либо специальных навыков или дополнительных операций: достаточно просто выполнить подключение
-                  и <a class="description__link" href="#">конфигурирование устройства</a> и положить его на то место, где ранее лежал ваш городской телефон. С этого момента вы
-                  и ваши сотрудники можете свободно пользоваться дешевой
-                  и защищённой связью.
-               </p>
-            </div>
-           </section>
-        </main>
-        <footer class="page-footer">
-           <div class="page-footer__content">
-            <ul class="page-footer__nav-lsit">
-               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Доставка и оплата</a></li>
-               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Гарантии и возврат</a></li>
-               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Техподдержка</a></li>
-               <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Контакты</a></li>
-            </ul>
-
-            <div class="page-footer__flex">
-               <picture>
-                  <img class="page-footer__logo" src="img/mobile/logo-footer.png" alt="HoMyRu логотип" width="130" height="41">
-               </picture>
-               <p class="page-footer__paragraph">© ХомиРу, 2006-2016</p>
-               <p class="page-footer__paragraph">Перепечатка материалов
-                 возможна только с активной
-                 ссылкой на homy.ru</p>
-           </div>
-
-           <div class="page-footer__flex page-footer__adress">
-            г. Москва, Зеленоград,
-            Панфиловский пр., дом 8,
-            строение 1
-            Схема проезда
-           </div>
-
-           <div class="page-footer__flex page-footer__contacts">
-               <div class="page-footer__contacts-inner">
-                <a class="page-footer__contacts-link page-footer__contacts-tel" href="tel:+74952554466">+7 495 2-55-44-66</a>
-                <a class="page-footer__contacts-link page-footer__contacts-mob" href="tel:+79111111111"> +7 911 111-11-11 </a>
-               </div>
-               <div class="page-footer__contacts-inner">
-                <a class="page-footer__contacts-link page-footer__contacts-email" href="mailto:info@homy.ru">info@homy.ru</a>
-                <a class="page-footer__contacts-link page-footer__contacts-skype" href="#">skype-on.06</a>
-               </div>
-               <ul class="page-footer__social-list">
-                  <li class="page-footer__social-item"><a class="page-footer__social-link" href="#">VKontacte</a></li>
-                  <li class="page-footer__social-item"><a class="page-footer__social-link" href="#">Facebook</a></li>
-                  <li class="page-footer__social-item"><a class="page-footer__social-link" href="#">Twiter</a></li>
+                     </i>
+                     <p class="numbers__item-text">2222 товара в каталоге среди 100 брендов</p>
+                  </li>
+                  <li class="numbers__item">
+                     <i class="numbers__icon numbers__icon--4">29</i>
+                     <p class="numbers__item-text">29 торговых партнеров</p>
+                  </li>
+                  <li class="numbers__item">
+                     <i class="numbers__icon numbers__icon--5">14</i>
+                     <p class="numbers__item-text">14 отгрузок в сутки</p>
+                  </li>
+                  <li class="numbers__item">
+                     <i class="numbers__icon numbers__icon--6">1</i>
+                     <p class="numbers__item-text">1 из лидеров рынка</p>
+                  </li>
                </ul>
+            </section>
+            <section class="partnership">
+               <h2 class="partnership__title">Как с нами работать?</h2>
+               <ul class="partnership__options-list">
+                  <li class="partnership__options-item partnership__options-item--active"><a class="partnership__options-link" href="#">В розницу</a></li>
+                  <li class="partnership__options-item"><a class="partnership__options-link" href="#">Оптовикам</a></li>
+                  <li class="partnership__options-item"><a class="partnership__options-link" href="#">Партнерам</a></li>
+                  <li class="partnership__options-item"><a class="partnership__options-link" href="#">Покупая с настройкой</a></li>
+               </ul>
+               <ul class="partnership__stages-list">
+                  <li class="partnership____stages-item">
+                     1. Обращение через
+                     сайт/по телефону                  
+                  </li>
+                  <li class="partnership____stages-item">
+                     2. Подтверждение
+                     заказа
+                  </li>
+                  <li class="partnership____stages-item">
+                     3. Доставка товара
+                  </li>
+                  <li class="partnership____stages-item">
+                     4. Оплата товара
+                     при получении,
+                     либопредоплата
+                     по безналичному
+                     расчету до п. 3
+                  </li>
+               </ul>
+            </section>
+            <section class="description">
+               <h2 class="visually-hidden">Описание</h2>
+               <div class="description__column">
+                  <p class="description__paragraph">
+                     Интернет магазин Хомиру поможет вам в выборе оборудования для <a class="description__link" href="#">IP телефонии</a> - которая активно используется как в бизнесе для общения с клиентами, партнёрами, поставщиками
+                     и инвесторами по всему миру, так и в повседневной жизни, для разговоров с друзьями и близкими в других городах. Важными преимуществом использования айпи телефона вместо обычного, является на порядок более низкая цена соединения. Звонок в регион, расположенный за несколько тысяч километров от вас, может обойтись намного дешевле, чем разговор по сотовому телефону в пределах города.
+                  </p>
+                  <p class="description__paragraph">
+                     Для <a class="description__link" href="#">подключения к услугам IP-телефонии</a> требуется только стабильный выход в интернет и устройство коммуникации, например, компьютер с гарнитурой или ip телефон.
+                  </p>
+               </div>
+               <div class="description__column">
+                  <p class="description__paragraph">
+                     Наш магазин айпи телефонии Homy предлагает <a class="description__link" href="#">полный спектр решений</a> для бизнеса и частных лиц в сфере организации современной связи (в том числе Skype телефоны и SIP телефоны). IP телефоны очень просты в использовании, так как применяется привычный всем, практически естественный интерфейс обычного телефона. Для работы с ним не требуется каких-либо специальных навыков или дополнительных операций: достаточно просто выполнить подключение
+                     и <a class="description__link" href="#">конфигурирование устройства</a> и положить его на то место, где ранее лежал ваш городской телефон. С этого момента вы
+                     и ваши сотрудники можете свободно пользоваться дешевой
+                     и защищённой связью.
+                  </p>
+               </div>
+            </section>
+         </main>
+         <footer class="page-footer">
+            <div class="page-footer__content">
+               <ul class="page-footer__nav-lsit">
+                  <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Доставка и оплата</a></li>
+                  <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Гарантии и возврат</a></li>
+                  <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Техподдержка</a></li>
+                  <li class="page-footer__nav-item"><a class="page-footer__nav-link" href="#">Контакты</a></li>
+               </ul>
+               <div class="page-footer__flex">
+                  <picture>
+                     <img class="page-footer__logo" src="img/mobile/logo-footer.png" alt="HoMyRu логотип" width="130" height="41">
+                  </picture>
+                  <p class="page-footer__paragraph">© ХомиРу, 2006-2016</p>
+                  <p class="page-footer__paragraph">Перепечатка материалов
+                     возможна только с активной
+                     ссылкой на homy.ru
+                  </p>
+               </div>
+               <div class="page-footer__flex page-footer__adress">
+                  г. Москва, Зеленоград,
+                  Панфиловский пр., дом 8,
+                  строение 1
+                  Схема проезда
+               </div>
+               <div class="page-footer__flex page-footer__contacts">
+                  <div class="page-footer__contacts-inner">
+                     <a class="page-footer__contacts-link page-footer__contacts-tel" href="tel:+74952554466">+7 495 2-55-44-66</a>
+                     <a class="page-footer__contacts-link page-footer__contacts-mob" href="tel:+79111111111"> +7 911 111-11-11 </a>
+                  </div>
+                  <div class="page-footer__contacts-inner">
+                     <a class="page-footer__contacts-link page-footer__contacts-email" href="mailto:info@homy.ru">info@homy.ru</a>
+                     <a class="page-footer__contacts-link page-footer__contacts-skype" href="#">skype-on.06</a>
+                  </div>
+                  <ul class="page-footer__social-list">
+                     <li class="page-footer__social-item"><a class="page-footer__social-link" href="#">VKontacte</a></li>
+                     <li class="page-footer__social-item"><a class="page-footer__social-link" href="#">Facebook</a></li>
+                     <li class="page-footer__social-item"><a class="page-footer__social-link" href="#">Twiter</a></li>
+                  </ul>
+               </div>
             </div>
-           </div>
-
-           <div class="page-footer__bottom">
-              <p class="page-footer__bottom-text">
-               Все описания и характеристики товаров носят информационный характер и могут отличаться от представленных
-               в технической документации производителей. Уточняйте информацию у наших менеджеров.               
-              </p>
-              <div class="page-footer__stats"></div>
-           </div>
-        </footer>
+            <div class="page-footer__bottom">
+               <p class="page-footer__bottom-text">
+                  Все описания и характеристики товаров носят информационный характер и могут отличаться от представленных
+                  в технической документации производителей. Уточняйте информацию у наших менеджеров.               
+               </p>
+               <div class="page-footer__stats"></div>
+            </div>
+         </footer>
       </div>
       <script src="js/main.min.js"></script>
    </body>

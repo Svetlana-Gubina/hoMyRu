@@ -4,7 +4,7 @@
     @include media-max() {
         outline: 4px dashed crimson;
 
-        display: block;
+        // display: block;
         width: 100%;
         max-width: 100%;
         @include indent();
