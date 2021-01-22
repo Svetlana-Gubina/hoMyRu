@@ -1,22 +1,17 @@
 .partnership {
     @include indent();
+    padding: 0 10px;
     width: 100%;
     max-width: 100%;
     @include flex();
     flex-direction: column;
     margin-bottom: 60px;
 
-    outline: 4px dashed #dc1467;
+    // outline: 4px dashed #dc1467;
 }
 
 .partnership__title {
-    color: #040d0d;
-    // font-family: Roboto;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 30px;
-    text-transform: uppercase;
+    // margin-left: 10px;
 }
 
 .partnership__options-list,
@@ -27,18 +22,30 @@
 }
 
 .partnership__options-list {
-    margin-bottom: 30px;
+    // outline: 3px dashed #dc1467;
+
+    margin-bottom: 10px;
 }
 
 .partnership__stages-list  {
+    // outline: 3px dashed #dc1467;
+    width: 100%;
+    max-width: 100%;
+    justify-content: space-between;
+
     @include media-tablet() {
-       justify-content: space-evenly;
+    //    justify-content: space-evenly;
     }
 }
 
 .partnership__options-item {
+    // outline: 3px dashed #dc1467;
+
     @include indent();
-    padding: 20px 10px;
+    // padding: 10px 25px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+
     @include flex();
     justify-content: center;
     align-items: center;
@@ -48,9 +55,9 @@
 }
 
 .partnership__options-link {
-    // display: block;
+    padding: 0;
     color: $brand-color;
-    // font-family: Roboto;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -60,6 +67,10 @@
 }
 
 .partnership__options-item--active {
+    // padding: 5px;
+    margin-right: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
     background-color: transparent;
 
     & .partnership__options-link {
@@ -69,18 +80,56 @@
 }
 
 .partnership____stages-item {
-    max-width: 45%;
-    padding-top: 100px;
-    margin: 5px;
+    // outline: 4px dashed crimson;
+
+    // max-width: 45%;
+    width: 121px;
+    padding-top: 70px;
+    margin-bottom: 10px;
+    flex: auto;
 
     @include flex();
-    justify-content: center;
-    align-items: center;
+    align-items: baseline;
+
+    color: #040d0d;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: 32px 32px;
 
     @include media-tablet() {
-        outline: 4px dashed crimson;
-        max-width: 25%;
-        padding-left: 40px;
-        padding-top: 0;
+        // outline: 4px dashed crimson;
+        // max-width: 25%;
+        // padding-left: 40px;
+        // padding-top: 0;
     }
+}
+
+.partnership__stages-paragraph {
+    @include indent();
+
+    & span {
+        font-weight: bold;
+    }
+}
+
+.partnership____stages-item--tel {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff5816' d='M14.89 23.654c-7.367 3.367-18.802-18.86-11.601-22.615l2.107-1.039 3.492 6.817-2.082 1.026c-2.189 1.174 2.37 10.08 4.609 8.994.091-.041 2.057-1.007 2.064-1.011l3.521 6.795c-.008.004-1.989.978-2.11 1.033zm-1.538-13.409l2.917.87c.223-.747.16-1.579-.24-2.317-.399-.739-1.062-1.247-1.808-1.469l-.869 2.916zm1.804-6.058c1.551.462 2.926 1.516 3.756 3.051.831 1.536.96 3.263.498 4.813l-1.795-.535c.325-1.091.233-2.306-.352-3.387-.583-1.081-1.551-1.822-2.643-2.146l.536-1.796zm.95-3.187c2.365.705 4.463 2.312 5.729 4.656 1.269 2.343 1.466 4.978.761 7.344l-1.84-.548c.564-1.895.406-4.006-.608-5.882-1.016-1.877-2.696-3.165-4.591-3.729l.549-1.841z'/%3E%3C/svg%3E");
+}
+
+.partnership____stages-item--order {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill=' %23ff5816' d='M10.041 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591zm-5.041-15c-1.654 0-3 1.346-3 3v14c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3v-14c0-1.654-1.346-3-3-3h-14zm19 3v14c0 2.761-2.238 5-5 5h-14c-2.762 0-5-2.239-5-5v-14c0-2.761 2.238-5 5-5h14c2.762 0 5 2.239 5 5z'/%3E%3C/svg%3E");
+}
+
+.partnership____stages-item--del {
+    background-size: 48px 34px;
+    background-image: url("../../img/delivery.png");
+}
+
+.partnership____stages-item--pay {
+    background-image: url("../../img/pay.png");
 }

@@ -4,26 +4,25 @@
     max-width: 100%;
     @include flex();
     flex-direction: column;
-    // background-color: #778899;
     color: #c8d4dc;
 
-    min-height: 600px;
+    // outline: 4px dashed crimson;
 
     @include media-tablet() {
-        min-height: 300px;
-        flex-direction: row;
+        // min-height: 300px;
+        // flex-direction: row;
     }
 }
 
 .page-footer__content {
     @include indent();
-    padding: 15px;
-    padding-top: 40px;
+    // padding: 15px;
     @include flex();
     background-color: #778899;
 
     @include media-tablet() {
-        justify-content: space-evenly;
+        // outline: 4px dashed crimson;
+        // justify-content: space-evenly;
     }
 }
 
@@ -32,25 +31,42 @@
     @include flex();
     flex-direction: column;
 
-    outline: 2px dashed crimson;
+    // outline: 2px dashed crimson;
 
     @include media-tablet() {
-        max-width: 25%;
+        // max-width: 25%;
     }
 }
+
+// logo
+
+.page-footer__flex-logo {
+    // outline: 2px dashed crimson;
+    max-width: 55%;
+    flex: auto;
+}
+
+.page-footer__logo {
+    outline: 3px dashed crimson;
+    margin-bottom: 20px;
+}
+
 
 // nav
 
 .page-footer__nav-lsit {
+    // outline: 4px dashed crimson;
+
     @include indent();
     @include flex();
     flex-direction: column;
     @include list();
-
-    outline: 4px dashed crimson;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
 
     @include media-tablet() {
-        order: 2;
+        // order: 2;
     }
 }
 
@@ -59,7 +75,7 @@
     border-bottom: 2px solid #ffffff;
 
     @include media-tablet() {
-        border-bottom: none;
+        // border-bottom: none;
     }
 }
 
@@ -67,15 +83,16 @@
     position: relative;
     @include indent();
     display: block;
+    padding: 0 10px;
+
     width: 100%;
     max-width: 100%;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    // font-family: Roboto;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 30px;
-    padding: 15px;
 
     &:hover,
     &:focus {
@@ -86,17 +103,36 @@
       opacity: 0.8;
     }
 
+    &::after {
+        content: "";
+        position: absolute;
+        top: 35%;
+        left: 90%;
+        width: 4px;
+        height: 4px;
+        background-color: transparent;
+        border-top: 3px solid #ffffff;
+        border-right: 3px solid #ffffff;
+        transform: rotate(45deg);
+    }
+
     @include media-tablet() {
-        padding: 0;
+        // padding: 0;
     }
 }
+
 
 // contacts
 
 .page-footer__contacts {
-    // outline: 2px dashed crimson;
+    // outline: 3px dashed teal;
+    max-width: 45%;
+    flex: auto;
+    align-items: flex-end;
+    justify-content: space-between;
+
     @include media-tablet() {
-        order: 4;
+        // order: 4;
     }
 }
 
@@ -108,6 +144,7 @@
 }
 
 .page-footer__contacts-link {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     text-align: right;
@@ -124,13 +161,36 @@
 }
 
 .page-footer__contacts-tel {
-    color: #ffffff;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    // letter-spacing: 0.5px;
+    margin-bottom: 3px;
 }
 
 .page-footer__contacts-mob {
-    position: relative;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+  
+    @include flex();
+    align-items: center;
+
+    & .page-footer__contacts-icon {
+       width: 16px;
+       height: 18px;
+       margin-right: 2px;
+       background-repeat: no-repeat;
+       background-position: center center;
+    }
+
+    & .page-footer__contacts-icon--pur {
+        background-image: url("../../img/mobile/phone-purple.png");
+      }
+    
+      & .page-footer__contacts-icon--grn {
+        // background-image: url("../../img/mobile/phone-green.png");
+      }
 }
 
 .page-footer__contacts-email {
@@ -139,6 +199,21 @@
 
 .page-footer__contacts-skype {
     position: relative;
+    outline: 2px dashed crimson;
+    max-width: 100px;
+    margin-left: auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background-image: url("../../img/mobile/skype.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
 }
 
 .page-footer__copyright {
@@ -147,6 +222,7 @@
 
 .page-footer__paragraph {
     @include indent();
+    margin-bottom: 5px;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -156,6 +232,8 @@
     @include indent();
     @include flex();
     @include list();
+
+    max-width: 150px;
 }
 
 .page-footer__social-item {
@@ -164,7 +242,18 @@
     height: 30px;
     margin: 5px;
     font-size: 0;
-    background-color: red;
+
+    &:first-of-type .page-footer__social-link {
+        background-color: #191970;
+    }
+
+    &:nth-of-type(2) .page-footer__social-link {
+        background-color: #4267B2;
+    }
+
+    &:nth-of-type(3) .page-footer__social-link {
+        background-color: #1DA1F2;
+    }
 }
 
 .page-footer__social-link {
@@ -172,11 +261,29 @@
     text-decoration: none;
     width: 100%;
     height: 100%;
-    background-color: red;
+    @include flex();
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+
+    & svg {
+        width: 60%;
+        height: 60%;
+    }
 }
 
+// adress
+
 .page-footer__adress {
-    // color: #c8d4dc;
+    display: none;
 }
 
 
@@ -184,13 +291,14 @@
 
 .page-footer__bottom {
     @include indent();
+    padding: 20px;
     width: 100%;
     max-width: 100%;
     @include flex();
     justify-content: center;
     align-items: center;
 
-    min-height: 110px;
+    // min-height: 110px;
 
     background-color: #2F4F4F;
 
@@ -213,12 +321,12 @@
    display: none;
 
   @include media-tablet() {
-      max-width: 589px;
+    //   max-width: 589px;
     //   display: block;
-      color: #c8d4dc;
-      font-family: Roboto;
-      font-size: 11px;
-      font-weight: 300;
-      line-height: 18px;
+    //   color: #c8d4dc;
+    //   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    //   font-size: 11px;
+    //   font-weight: 300;
+    //   line-height: 18px;
   }
 }
