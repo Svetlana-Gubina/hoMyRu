@@ -13,6 +13,10 @@
         flex-direction: row;
     }
 
+    @include media-desktop() {
+        outline: 4px dashed crimson;
+    }
+
     @include media-max() {
         align-items: center;
     }
@@ -35,12 +39,11 @@
     @include flex();
    
     @include media-tablet() {
-        // outline: 4px dashed crimson;
         justify-content: space-between;
         // width: 100%;
         // max-width: 100%;
         padding: 20px;
-        padding-top: 30px;
+        padding-top: 40px;
     }
 
     @include media-desktop(){
@@ -77,16 +80,17 @@
     }
 
     @include media-desktop(){
-       margin-right: 110px;
+       margin-right: 125px;
     }
 }
 
 .page-footer__logo {
-    outline: 3px dashed crimson;
-    min-width: 130px;
+    width: 130px;
+    height: 41px;
     margin-bottom: 20px;
 
     @include media-tablet() {
+        outline: 3px dashed crimson;
         margin-bottom: 0;
     }
 }
@@ -116,6 +120,7 @@
         order: 2;
         max-width: 25%;
         margin-bottom: 0;
+        margin-top: -5px;
     }
 }
 
@@ -137,6 +142,8 @@
         align-items: center;
         width: 112px;
         padding: 15px;
+        margin-top: 15px;
+        margin-left: 10px;
 
         background-image: url("../../img/cloud.png");
         background-repeat: no-repeat;
@@ -192,6 +199,7 @@
     }
 
     @include media-tablet() {
+        line-height: 26px;
         padding: 0;
         text-decoration: underline;
 
@@ -214,10 +222,11 @@
     @include media-tablet() {
         order: 4;
         max-width: 190px;
+        justify-content: start;
     }
 
     @include media-desktop() {
-        justify-content: start;
+        // justify-content: start;
     }
 }
 
@@ -391,6 +400,26 @@
 
     @include media-tablet() {
        display: flex;
+       color: #c8d4dc;
+       font-family: 'Roboto', Arial, Helvetica, sans-serif;
+       font-size: 13px;
+       font-weight: 300;
+       line-height: 18px;
+       max-width: 155px;
+       margin-right: 30px;
+
+       & a {
+        color: #c8d4dc;
+
+        &:hover,
+        &:focus {
+          opacity: 0.5;
+        }
+
+        &:active {
+          opacity: 0.8;
+        }
+       }
     }
 
     @include media-desktop(){

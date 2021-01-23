@@ -4,21 +4,20 @@
   min-width: $mobile-width;
   @include indent();
   padding: 0 10px;
-  // margin-right: auto;
-  // margin-left: auto;
   @include flex();
   height: auto;
 
   // background-color: pink;
 
   @include media-tablet() {
-    background-color: skyblue;
-    // width: $tablet-width;
+    // background-color: skyblue;
   }
 
   @include media-desktop() {
-    // width: $desktop-width;
+    // background-color: skyblue;
     padding: 0 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @include media-max() {

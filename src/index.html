@@ -7,10 +7,14 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+      <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
       <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
       <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
-      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>-->
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <link rel="stylesheet" href="css/normalize.min.css">
       <link rel="stylesheet" href="css/style.min.css">
    </head>
@@ -37,11 +41,11 @@
             <div class="page-header__block page-header__logo-container">
                <p class="page-header__reg">Ваш регион: <a class="page-header__reg-link" href="#">Москва</a></p>
                <picture>
-                  <!--<source type="image/webp" media="(min-width: 1000px)" srcset="img/desktop/logo-desktop.webp">-->
-                  <source media="(min-width: 1000px)" srcset="img/desktop/logo-desktop.png">
-                  <!--<source type="image/webp" media="(min-width: 750px)" srcset="img/tablet/logo-tablet.webp">-->
+                  <source type="image/webp" media="(min-width: 1000px)" srcset="img/desktop/logo-desk.webp">
+                  <source media="(min-width: 1000px)" srcset="img/desktop/logo-desk.png">
+                  <source type="image/webp" media="(min-width: 750px)" srcset="img/tablet/logo-tablet.webp">
                   <source media="(min-width: 750px)" srcset="img/tablet/logo-tablet.png">
-                  <!--<source type="image/webp" srcset="img/mobile/logo.webp">-->
+                  <source type="image/webp" srcset="img/mobile/logo.webp">
                   <img class="page-header__logo" src="img/mobile/logo.png" alt="HoMyRu логотип">
                </picture>
             </div>
@@ -74,13 +78,12 @@
 
             <div class="page-header__block page-header__search">
                <div class="page-header__search-container">
-                  <p class="page-header__search-paragraph">VoIP решения
+                  <p class="page-header__search-paragraph"><span>VoIP решения</span><br/>
                      для экономных людей
                   </p>
                   <form class="page-header__search-form" action="#" method="GET">
-                     <label>
-                     <input type="text" name="search" placeholder="Поиск по сайту">
-                     </label>
+                     <label class="visually-hidden" for="search"></label>
+                     <input id="search" type="text" name="search" placeholder="Поиск по сайту">
                      <button type="submit">искать</button>
                   </form>
                </div>
@@ -653,7 +656,7 @@
                   </li>
                   <li class="popular__item">
                      <div class="popular__img-container">
-                        <img class="popular__img" src="img/item-6.jpg" width="230" height="171" alt="GSM-VoIP шлюз OpenVox
+                        <img class="popular__img" src="img/item-6.jpg" width="238" height="171" alt="GSM-VoIP шлюз OpenVox
                            VoxStack VS-GW2120-4G">
                      </div>
                      <a href="#" class="popular__item-title">GSM-VoIP шлюз OpenVox
@@ -690,12 +693,12 @@
                </div>
                <div class="brands__inner-bottom">
                   <picture>
-                     <!--<source type="image/webp" media="(min-width: 1000px)" srcset="img/">-->
-                     <source media="(min-width: 1000px)" srcset="img/">
-                     <!--<source type="image/webp" media="(min-width: 750px)" srcset="img/">-->
-                     <source media="(min-width: 750px)" srcset="img/">
-                     <!--<source type="image/webp" srcset="img/">-->
-                     <img class="brands__img" src="img/tablet/brands.png" width="885" height="52" alt="Наши ключевые бренды">
+                     <source type="image/webp" media="(min-width: 1140px)" srcset="img/brands-max.webp">
+                     <source media="(min-width: 1140px)" srcset="img/brands-max.png">
+                     <source type="image/webp" media="(min-width: 1000px)" srcset="img/desktop/brands-desk.webp">
+                     <source media="(min-width: 1000px)" srcset="img/desktop/brands-desk.png">
+                     <source type="image/webp" srcset="img/tablet/brands.webp">
+                     <img class="brands__img" src="img/tablet/brands.png" alt="Наши ключевые бренды">
                   </picture>
                </div>
             </section>
@@ -884,9 +887,9 @@
                      </ul>
 
                      <div class="page-footer__flex page-footer__flex-logo">
-                        <picture>
-                           <img class="page-footer__logo" src="img/mobile/logo-footer.png" alt="HoMyRu логотип" width="130" height="41">
-                        </picture>
+
+                        <img class="page-footer__logo" src="img/mobile/logo-footer.png" alt="HoMyRu логотип" width="130" height="41">
+                        
                         <p class="page-footer__paragraph">© ХомиРу, 2006-2016</p>
                         <span class="page-footer__span">Оборудование и решения
                            для VoIP</span>
@@ -900,7 +903,7 @@
                         г. Москва, Зеленоград,
                         Панфиловский пр., дом 8,
                         строение 1
-                        Схема проезда
+                        <a href="#">Схема проезда</a>
                      </div>
 
                      <div class="page-footer__flex page-footer__contacts">

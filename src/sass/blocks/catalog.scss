@@ -6,6 +6,10 @@
     flex-direction: column;
     // margin-bottom: 10px;
 
+    @include media-tablet() {
+      margin-bottom: 20px;
+    }
+
     // outline: 4px dashed blue;
 }
 
@@ -26,6 +30,9 @@
 
 .catalog .catalog__inner:last-of-type {
   margin-bottom: 20px;
+
+  @include media-tablet() {
+  }
 }
 
 .catalog__inner-top {
@@ -159,6 +166,11 @@
   justify-content: space-between;
   align-items: center;
 
+  &:hover,
+  &:focus {
+    border: 1px solid $brand-color;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -171,6 +183,9 @@
   }
 
   @include media-tablet() {
+    justify-content: flex-start;
+    margin-right: 20px;
+    margin-left: 0;
     max-width: 213px;
     margin-bottom: 20px;
     // margin-right: 25px;
@@ -450,8 +465,9 @@
   margin-left: auto;
 
   @include media-tablet() {
+    outline: 3px dashed red;
     max-width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   @include media-desktop() {

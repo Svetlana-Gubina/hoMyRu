@@ -12,7 +12,7 @@
     }
 
     @include media-desktop() {
-      margin-bottom: 80px;
+      margin-bottom: 60px;
     }
 }
 
@@ -73,20 +73,27 @@
     max-width: 100%;
    
     @include flex();
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 
-    // outline: 4px dashed blue;
+    // outline: 4px dashed red;
+
+    @include media-desktop() {
+      justify-content: center;
+    }
 }
 
 .brands__img {
-  // width: 885px;
-  width: 90%;
-  max-width: 90%;
-  margin-left: 20px;
+  // outline: 4px dashed blue;
+  min-width: 641px;
+  height: 52px;
+  // width: 90%;
+  // max-width: 90%;
+  margin-left: 40px;
 
   @include media-desktop() {
     width: 885px;
     height: 52px;
+    margin-left: 20px;
   }
 }
