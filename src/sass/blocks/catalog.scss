@@ -193,7 +193,8 @@
 
   @include media-max() {
     // outline: 4px dashed crimson;
-    max-width: 233px
+    max-width: 233px;
+    justify-content: space-between;
   }
 }
 

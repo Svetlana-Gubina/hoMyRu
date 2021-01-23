@@ -7,21 +7,13 @@
   @include flex();
   height: auto;
 
-  // background-color: pink;
-
-  @include media-tablet() {
-    // background-color: skyblue;
-  }
-
   @include media-desktop() {
-    // background-color: skyblue;
-    padding: 0 15px;
+    // padding: 0 15px;
     margin-right: auto;
     margin-left: auto;
   }
 
   @include media-max() {
-    // outline: 1px dashed crimson;
     max-width: $max-desktop-width;
     padding: 0;
   }
