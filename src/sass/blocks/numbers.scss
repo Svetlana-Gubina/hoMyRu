@@ -57,6 +57,11 @@
     }
 }
 
+.numbers__list .numbers__item:nth-of-type(5),
+.numbers__list .numbers__item:last-of-type {
+    display: none;
+}
+
 .numbers__icon {
     width: 130px;
     height: 130px;
