@@ -3,11 +3,12 @@
   max-width: 100%;
   @include indent();
   @include flex();
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+
+  outline: 3px dashed green;
 
   @include media-tablet() {
     outline: 3px dashed crimson;
-    // width: $tablet-width;
     justify-content: space-between;
   }
 
@@ -23,7 +24,7 @@
 
   @include flex();
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   @include media-tablet() {
     // max-width: 250px;
@@ -32,7 +33,7 @@
 }
 
 .page-header__logo-container {
-  max-width: 138px;
+  min-width: 138px;
 
   @include media-tablet() {
     // outline: 3px dashed teal;
@@ -41,9 +42,8 @@
 }
 
 .page-header__logo {
-  width: 138px;
-  height: 42px;
-  max-height: 25px;
+  width: 140px;
+  height: 35px;
 
   @include media-tablet() {
     outline: 4px dashed crimson;
@@ -55,9 +55,9 @@
 
 
 .page-header__reg {
-  // font-size: 13px;
-  // line-height: 20px;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
   @include indent();
   padding: 0.5em 0;
   margin-bottom: 10px;
@@ -83,23 +83,26 @@
 // USER
 
 .page-header__user-nav {
-  // outline: 4px dashed teal;
   margin-left: auto;
-  max-width: 110px;
+  min-width: 110px;
 
   @include media-tablet() {
+    outline: 4px dashed teal;
     order: 3;
     margin-left: 0;
 
     min-width: 250px;
+  }
+
+  @include media-max() {
+    // order: 0;
   }
 }
 
 .page-header__user-top {
   @include indent();
   @include flex();
-  padding-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @include media-tablet() {
     justify-content: space-around;
@@ -112,10 +115,9 @@
 .page-header__user-container {
   @include indent();
   @include flex();
-  padding-left: 20px;
-  justify-content: space-around;
 
   @include media-tablet() {
+    outline: 4px dashed green;
     align-items: center;
     padding-left: 0;
   }
@@ -137,6 +139,9 @@
   padding-left: 20px;
   color: #4673ab;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
 
   &:hover,
   &:focus {
@@ -222,9 +227,31 @@
 }
 
 .page-header__cart {
+  position: relative;
   font-size: 0;
   width: 22px;
   height: 22px;
+
+  & .page-header__cart-count {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 21px;
+    height: 13px;
+
+    color: $brand-color;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: center;
+
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
 
   @include media-tablet() {
     width: 180px;
@@ -266,11 +293,12 @@
   flex: auto;
   width: 100%;
   max-width: 100%;
-  // outline: 4px dashed green;
+
+  padding-right: 15px;
 
   @include media-tablet() {
+    outline: 4px dashed green;
     max-width: 190px;
-    // outline: 4px dashed teal;
     order: 2;
     flex-direction: column;
     align-items: flex-end;
@@ -279,6 +307,11 @@
 
   @include media-desktop() {
     align-items: flex-start;
+  }
+
+  @include media-max() {
+    outline: 4px dashed green;
+    // order: 2;
   }
 }
 
@@ -302,7 +335,9 @@
 
 .page-header__contacts-link {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  // padding: 0.5em;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
   color: #040d0d;
   text-decoration: none;
 
@@ -321,7 +356,7 @@
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.5px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 
   @include media-max() {
     font-size: 22px;
@@ -380,6 +415,8 @@
 .page-header__contacts-email {
   color: #4673ab;
   text-decoration: underline;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
 .page-header__contacts-skype {
@@ -435,7 +472,7 @@
 
   @include media-max() {
       @include indent();
-      // @include flex();
+      @include flex();
 
       background-color: hotpink;
   }
@@ -445,8 +482,9 @@
   display: none;
 
   @include media-max() {
-      @include indent();
-      @include flex();
-      flex-direction: column;
+    // order: 3;
+    @include indent();
+    @include flex();
+    flex-direction: column;
   }
 }
