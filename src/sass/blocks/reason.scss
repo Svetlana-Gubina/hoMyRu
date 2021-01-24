@@ -2,8 +2,6 @@
     display: none;
 
     @include media-tablet() {
-        // outline: 4px dashed orange;
-
         @include indent();
         width: 100%;
         max-width: 100%;
@@ -50,7 +48,6 @@
 
 .reason__flex-title {
     @include indent();
-    // padding-left: 50px;
     width: 100%;
     max-width: 100%;
     @include flex();
@@ -73,11 +70,12 @@
     .reason__icon {
         width: 23px;
         height: 23px;
-        margin-right: 5px;
+        margin-right: 10px;
     }
 }
 
 .reason__flex-title--bad {
+    padding-left: 20px;
     background-color: #ff0000;
 }
 
@@ -86,8 +84,6 @@
 }
 
 .reason__flex-list {
-    // outline: 4px dashed red;
-
     @include indent();
     margin: 15px;
     margin-left: 25px;

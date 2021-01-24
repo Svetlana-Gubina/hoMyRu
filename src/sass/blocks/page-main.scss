@@ -2,20 +2,13 @@
     @include indent();
     width: 100%;
     max-width: 100%;
-
-    @include media-max() {
-        // outline: 3px dashed hotpink;
-        padding: 0;
-    }
 }
 
 .page-main__title {
     display: block;
     color: #000000;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    // letter-spacing: 0.05px;
     font-size: 22px;
-    // font-weight: 500;
     font-weight: bold;
     line-height: 20px;
     text-transform: uppercase;

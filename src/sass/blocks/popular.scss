@@ -2,7 +2,6 @@
     display: none;
 
     @include media-tablet() {
-        // outline: 2px dashed purple;
         @include indent();
         width: 100%;
         max-width: 100%;
@@ -17,7 +16,6 @@
 }
 
 .popular__title {
-    // outline: 4px dashed purple;
     margin-bottom: 50px;
 }
 
@@ -25,7 +23,6 @@
     @include indent();
     @include flex();
     @include list();
-    // justify-content: space-between;
 
     width: 100%;
     max-width: 100%;
@@ -44,7 +41,7 @@
     margin-bottom: 15px;
 
     @include media-desktop() {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     @include media-max() {
@@ -65,13 +62,10 @@
 .popular__img-container {
     @include indent();
     @include flex();
-    // flex-direction: column;
     justify-content: center;
     align-items: center;
 
     min-height: 170px;
-
-    // outline: 4px dashed skyblue;
 }
 
 .popular__img {
@@ -81,7 +75,6 @@
 
 .popular__item-title {
     @include indent();
-    // display: block;
     color: $link-color;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 16px;

@@ -2,7 +2,6 @@
     display: none;
 
     @include media-tablet() {
-        // outline: 4px dashed hotpink;
         @include indent();
         width: 100%;
         max-width: 100%;

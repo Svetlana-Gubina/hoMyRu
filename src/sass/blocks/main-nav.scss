@@ -4,10 +4,6 @@
 
     width: 100%;
     max-width: 100%;
-
-    // margin-right: auto;
-    // margin-left: auto;
-
     min-height: 40px;
 
     color: #ffffff;
@@ -46,6 +42,10 @@
     opacity: 0.8;
   }
 
+  @include media-desktop() {
+    margin-left: 0;
+  }
+
   @include media-max() {
       display: none;
   }
@@ -54,7 +54,7 @@
 .main-nav__btn-icon {
   width: 32px;
   height: 15px;
-  background-image: url("../../img/mobile/burger.png");
+  background-image: url("../img/mobile/burger.png");
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 10px;

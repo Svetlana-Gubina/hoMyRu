@@ -2,7 +2,6 @@
     display: none;
 
     @include media-tablet() {
-        // outline: 4px dashed teal;
         @include indent();
         width: 100%;
         max-width: 100%;
@@ -23,8 +22,6 @@
     @include flex();
     justify-content: space-between;
     margin-bottom: 20px;
-
-    // outline: 2px dashed blue;
 }
 
 .brands__all-link {
@@ -71,12 +68,8 @@
     @include indent();
     width: 100%;
     max-width: 100%;
-   
     @include flex();
-    // justify-content: center;
     align-items: center;
-
-    // outline: 4px dashed red;
 
     @include media-desktop() {
       justify-content: center;
@@ -84,11 +77,8 @@
 }
 
 .brands__img {
-  // outline: 4px dashed blue;
   min-width: 641px;
   height: 52px;
-  // width: 90%;
-  // max-width: 90%;
   margin-left: 40px;
 
   @include media-desktop() {

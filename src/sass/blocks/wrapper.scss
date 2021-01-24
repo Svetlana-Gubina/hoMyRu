@@ -8,13 +8,13 @@
   height: auto;
 
   @include media-desktop() {
-    // padding: 0 15px;
+    max-width: $desktop-width;
     margin-right: auto;
     margin-left: auto;
   }
 
   @include media-max() {
+    width: $max-desktop-width;
     max-width: $max-desktop-width;
-    padding: 0;
   }
 }

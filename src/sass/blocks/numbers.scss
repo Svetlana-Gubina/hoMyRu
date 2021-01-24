@@ -2,12 +2,10 @@
     display: none;
 
     @include media-tablet() {
-        // outline: 4px dashed purple;
         @include indent();
         width: 100%;
         max-width: 100%;
         @include flex();
-        // margin-bottom: 20px;
     }
 }
 
@@ -26,11 +24,7 @@
 }
 
 .numbers__item {
-    // width: 15%;
-    // outline: 4px dashed purple;
-
     width: 150px;
-    // height: 130px;
 
     @include indent();
     @include flex();
@@ -94,7 +88,7 @@
 
 .numbers__item-text {
     color: #040d0d;
-    // font-family: Roboto;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
